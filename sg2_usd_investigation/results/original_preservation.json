@@ -1,0 +1,11 @@
+{
+  "original_hash_matches": {
+    "source/cyclo_lab/data/robots/FFW/FFW_SG2.usd": true,
+    "source/cyclo_lab/cyclo_lab/assets/robots/FFW_SG2.py": true
+  },
+  "git_diff_returncode": 0,
+  "git_diff_cached_returncode": 0,
+  "head_unchanged": true,
+  "git_status": "## main...origin/main [ahead 8]\n?? sg2_usd_investigation/\n",
+  "origin_upstream_push_configuration": "origin\thttps://github.com/shyun-p/cyclo_lab.git (fetch)\norigin\thttps://github.com/shyun-p/cyclo_lab.git (push)\nupstream\thttps://github.com/ROBOTIS-GIT/cyclo_lab.git (fetch)\nupstream\tno_push (push)\n"
+}

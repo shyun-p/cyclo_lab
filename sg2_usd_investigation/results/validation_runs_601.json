@@ -1,0 +1,50 @@
+[
+  {
+    "name": "original_motor_601",
+    "command": [
+      "/home/robotis/isaacsim/python.sh",
+      "/home/robotis/workspaces/hx5_isaac/cyclo_lab/sg2_usd_investigation/scripts/physics_probe_601.py",
+      "--case",
+      "original_motor",
+      "--usd",
+      "/home/robotis/workspaces/hx5_isaac/cyclo_lab/source/cyclo_lab/data/robots/FFW/FFW_SG2.usd",
+      "--out",
+      "/home/robotis/workspaces/hx5_isaac/cyclo_lab/sg2_usd_investigation/results/physics_original_motor_601.json",
+      "--/log/file=/home/robotis/workspaces/hx5_isaac/cyclo_lab/sg2_usd_investigation/results/original_motor_601.kit.log"
+    ],
+    "returncode": 0,
+    "elapsed_s": 60.46534652700211
+  },
+  {
+    "name": "cylinder_601",
+    "command": [
+      "/home/robotis/isaacsim/python.sh",
+      "/home/robotis/workspaces/hx5_isaac/cyclo_lab/sg2_usd_investigation/scripts/physics_probe_601.py",
+      "--case",
+      "trial",
+      "--usd",
+      "/home/robotis/workspaces/hx5_isaac/cyclo_lab/sg2_usd_investigation/runtime/FFW_SG2_cylinder.usd",
+      "--out",
+      "/home/robotis/workspaces/hx5_isaac/cyclo_lab/sg2_usd_investigation/results/physics_cylinder_601.json",
+      "--/log/file=/home/robotis/workspaces/hx5_isaac/cyclo_lab/sg2_usd_investigation/results/cylinder_601.kit.log"
+    ],
+    "returncode": 0,
+    "elapsed_s": 27.560776640999393
+  },
+  {
+    "name": "sensors_601",
+    "command": [
+      "/home/robotis/isaacsim/python.sh",
+      "/home/robotis/workspaces/hx5_isaac/cyclo_lab/sg2_usd_investigation/scripts/sensor_probe_601.py",
+      "--usd",
+      "/home/robotis/workspaces/hx5_isaac/cyclo_lab/sg2_usd_investigation/runtime/FFW_SG2_trial.usd",
+      "--out-dir",
+      "/home/robotis/workspaces/hx5_isaac/cyclo_lab/sg2_usd_investigation/results/sensors_601",
+      "--frames",
+      "180",
+      "--/log/file=/home/robotis/workspaces/hx5_isaac/cyclo_lab/sg2_usd_investigation/results/sensors_601.kit.log"
+    ],
+    "returncode": 0,
+    "elapsed_s": 137.34707710200018
+  }
+]

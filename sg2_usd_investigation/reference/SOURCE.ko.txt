@@ -1,0 +1,10 @@
+공식 참고 데이터 보관
+
+출처: ROBOTIS-GIT/ai_worker
+URDF 마지막 수정 커밋: 50f368f42ed836302035008f3c17960a873a6ccf (2026-08-19)
+보관 당시 ai_worker checkout: 9bc7f7b93ee118f4f3f47016d2f2314c0d0895e4
+파일: ffw_description/urdf/ffw_sg2_rev1_follower/ffw_sg2_follower.urdf
+URL: https://github.com/ROBOTIS-GIT/ai_worker/blob/50f368f42ed836302035008f3c17960a873a6ccf/ffw_description/urdf/ffw_sg2_rev1_follower/ffw_sg2_follower.urdf
+SHA256: c5ec27133805e2ec1bdbd3c290f563dda0835cf2e22224b6e29a5f0216dbf9eb
+URDF와 LICENSE는 수정 없이 복사했습니다.
+URDF 일치는 실물 질량/관성/센서 보정값의 검증을 의미하지 않습니다.

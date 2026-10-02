@@ -1,0 +1,11 @@
+{
+  "head": "f4c0470a5e0af54a18327cf96967e8716d64dbc0",
+  "git_status_before": "?? sg2_usd_investigation/\n",
+  "official_sha256": {
+    "source/cyclo_lab/data/robots/FFW/FFW_SG2.usd": "a058ecf3266714440bef9ff26d7fe46a1ef60f768f0d5dee754b252b05688689",
+    "source/cyclo_lab/cyclo_lab/assets/robots/FFW_SG2.py": "bf31fad831fd1735d3c221c567a004ba2ae976d039b947e6db46838155afb24e"
+  },
+  "prior_v4_sha256": "a26ce190c929409208c132449fad23e17b6e546a6d72d019c65e35790fd8d683",
+  "urdf_sha256": "c5ec27133805e2ec1bdbd3c290f563dda0835cf2e22224b6e29a5f0216dbf9eb",
+  "isaac_sim_version": "6.0.1-rc.7+release.42383.32955d8d.gl"
+}

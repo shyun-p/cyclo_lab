@@ -1,0 +1,93 @@
+SG2 별도 조사/검증 파일 사용법
+
+먼저 REPORT.ko.txt의 적용 범위를 읽으세요. 공식 source/ 파일을 수정하는 단계는 없습니다.
+review/의 Python 파일은 원문 아래 주석 비교용입니다. 이 파일 자체를 실행하면 제안이 적용되지 않습니다.
+runtime/FFW_SG2_trial.py의 make_trial_cfg()는 별도 Isaac Lab 환경에서만 사용할 cfg factory입니다.
+runtime/mobile_actions.py는 별도 모바일 task용 행동 factory입니다. 원본 task에 자동 설치되지 않습니다.
+
+최종 모델:
+  runtime/FFW_SG2_trial.usd                  물리 검증을 통과한 로봇 사본
+  runtime/FFW_SG2_with_sensors.usda           위 로봇 + 머리 카메라2/손목 카메라2/LiDAR2의 동적 layer
+  runtime/FFW_SG2_v4_source.usd               이전 조사 v4의 보존 사본 (수정 전)
+
+주의: results/**/runtime/sensor_scene.usda는 거리 시험을 위한 정지 fixture입니다.
+주행 모델 대신 사용하지 마세요. 동적 센서 모델은 runtime/FFW_SG2_with_sensors.usda입니다.
+단순 USD 로드만으로 모터 cfg나 sensor annotator가 자동 연결되지는 않습니다.
+
+Isaac Sim이 이미 켜져 있을 때 (기존 창의 Script Editor):
+  1. 현재 작업을 보존한 뒤 File > New로 빈 장면을 준비합니다.
+  2. Window > Script Editor를 엽니다.
+  3. 다음 두 줄을 붙여넣고 Run을 누릅니다. 터미널 명령이 아닙니다.
+       import runpy
+       runpy.run_path("/home/robotis/workspaces/hx5_isaac/cyclo_lab/sg2_usd_investigation/scripts/open_sg2_in_existing.py")
+  4. SG2 Manual Control 창에서 이동/STOP/그리퍼/Demo once를 조작합니다.
+이 실행기는 SimulationApp을 새로 생성하지 않으며, 조작 창을 닫아도 기존 Isaac Sim은 종료하지 않습니다.
+이미 조작 창이 보이면 중복 실행하지 않고 그 창을 사용합니다.
+손목 추가 전 장면을 열어둔 경우 SG2 조작 창을 닫고, File > New 후 위 두 줄을 다시 실행합니다.
+기존 비어 있지 않은 장면은 자동 교체하지 않습니다. 빈 장면을 먼저 준비하라는 오류를 출력합니다.
+비동기 Kit 초기화/주행/센서 검증 기록: results/manual_existing_wrist_601/session.json
+
+화면에서 직접 조작하기 (설치된 Isaac Sim 6.0.1-rc.7 GUI):
+  /home/robotis/isaacsim/python.sh sg2_usd_investigation/scripts/manual_gui_601.py
+짧은 직진/옆 이동/그리퍼 시연 후 조작 창을 열어두려면 --demo-once를 추가합니다.
+GUI/GPU와 X 디스플레이 접근이 필요합니다. Docker 5.1 대신 로컬 6.0.1을 사용합니다.
+공식 source/ 및 runtime/ 로봇 파일은 참조만 합니다. 바닥·모터·표시는 메모리의 새 stage에만 작성합니다.
+
+조작 창: SG2 Manual Control - separate trial
+  +X Forward / -X Back / +Y Left / -Y Right: 월드 X/Y 방향으로 계속 이동
+  STOP: 바퀴 속도를 즉시 0으로 명령 (별도 로봇 기준 좌표가 아닌 월드 좌표)
+  Speed: 다음 이동 버튼을 누를 때 적용할 속도 (m/s)
+  Both grippers 슬라이더 또는 Grip 0 / Grip 0.8: 양손 마스터 관절 명령 (rad)
+  Hand close-up: 왼손 확대. Home view: 현재 로봇 전체 보기
+  Left wrist RGB / Right wrist RGB: 좌우 손목 카메라 영상 창 표시/숨김
+  Follow ON/OFF: 주 화면이 이동하는 로봇을 따라가기
+  CoM dot ON/OFF: 현재 질량·자세에서 계산한 무게중심의 빨간 점
+  Demo once: 직진→정지→옆 이동→그리퍼0.8→그리퍼0의 짧은 시연
+  Reset robot: 시뮬레이터와 관절을 초기 상태로 재설정
+초록색 포인트는 실제 RTX LiDAR 출력이며, SG2 Head RGB와 Left/Right Wrist RGB 창은 각 장착 카메라 시점입니다.
+손목 위치는 ROBOTIS URDF, optical 방향과 명목 FOV는 RealSense D405 자료 기준입니다.
+실측 카메라 보정과 스테레오 깊이 오차는 재현하지 않습니다.
+standalone manual_gui 실행에서는 조작 창을 닫으면 시험 프로세스가 종료됩니다.
+기존 창용 open_sg2_in_existing 실행에서는 조작 창을 닫아도 Isaac Sim은 계속 켜져 있습니다.
+GUI 관측값과 시연 화면: results/manual_gui_wrist_601/session.json, robot_view.png, head_rgb.png, wrist_left/right_rgb.png
+손목 추가 전 기록은 results/manual_gui_601/ 및 manual_existing_601/에 보존됩니다.
+first_timing_session.json은 초기 GUI 시간 처리 수정 전 결과입니다. 최종 결과와 구분하세요.
+이 GUI는 독립 물리+센서 장면입니다. 전체 Isaac Lab pick_place 환경 실행을 의미하지 않습니다.
+
+원문/주석 동일성 재확인 (시뮬레이터 불필요):
+  python3 sg2_usd_investigation/scripts/annotation_ast_check.py
+
+정적 질량/CoM/관성 재확인 (원본 및 기존 형제 조사 자료는 읽기만):
+  source ../sg2_usd_investigation/scripts/env.sh
+  /home/robotis/isaacsim/python.sh sg2_usd_investigation/scripts/static_audit.py \
+    --candidate sg2_usd_investigation/runtime/FFW_SG2_trial.usd \
+    --candidate-label candidate_trial --artifact-name static_final_audit \
+    --review-name FFW_SG2_trial.physics.review.usda
+
+설치된 Isaac Sim 6.0.1-rc.7에서 최종 물리 + 센서 시험:
+  /home/robotis/isaacsim/python.sh sg2_usd_investigation/scripts/run_validation_601.py --only final
+GPU 접근 및 Sim 로그/cache 쓰기 때문에 샌드박스 외부 실행 권한이 필요할 수 있습니다.
+기존 결과를 다시 쓰는 재실행입니다. 원본 USD/Python은 저장하지 않습니다.
+판정은 results/physics_final_601.json의 passed와 sensor_result.json의 pass/status를 확인하세요.
+초기 버전에서 SimulationApp.close의 fast shutdown은 종료 코드를 0으로 만들었으므로 종료 코드만 믿으면 안 됩니다.
+
+최종 센서 단독 재확인:
+  /home/robotis/isaacsim/python.sh sg2_usd_investigation/scripts/run_validation_601.py --only sensors_wrist
+  결과: results/sensors_wrist_601/sensor_result.json (카메라4 + LiDAR2)
+
+사본 재구축 (필요할 때만; 기존 시험 후보/센서 layer는 재검증 필요):
+  source ../sg2_usd_investigation/scripts/env.sh
+  /home/robotis/isaacsim/python.sh sg2_usd_investigation/scripts/build_trial.py --collider cylinder --promote
+이 명령은 기존 형제 조사 v4/URDF를 읽고 이 조사 폴더의 runtime/ 사본만 다시 씁니다.
+6.0.1 importer로 재변환하는 명령이 아닙니다.
+
+전체 Isaac Lab pick_place 실행, policy 재학습, ROS2 연결, 실제 로봇 제어는 이 절차에 포함되지 않습니다.
+원본 행동19개에 바퀴6개를 더하면25개입니다. task의 eef/camera/reset/관측과 정책/데이터셋도 함께 검토해야 합니다.
+실제 모터, 질량/관성, camera calibration, LiDAR profile 및 그리퍼 개구폭/힘/속도 사양은 ROBOTIS 확인 대상입니다.
+
+PR 전 일괄 점검 (시뮬레이터를 새로 띄우지 않음):
+  python3 sg2_usd_investigation/scripts/check_remaining.py
+  결과: results/remaining_checks.json 및 task_path_audit.json
+  현재 자산 해시와 기존 통과 결과를 대조하고, task 경로 및6.0.1 의존성을 새로 확인합니다.
+  전체 task가 실행됐다는 뜻은 아닙니다. 실제5.1 cfg 검증은 별도 lab_config_probe.py의 결과를 읽습니다.
+  문의할 자료: REMAINING_AND_QUESTIONS.ko.txt

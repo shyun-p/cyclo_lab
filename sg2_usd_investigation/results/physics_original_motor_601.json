@@ -1,0 +1,340 @@
+{
+  "case": "original_motor",
+  "usd": "/home/robotis/workspaces/hx5_isaac/cyclo_lab/source/cyclo_lab/data/robots/FFW/FFW_SG2.usd",
+  "usd_sha256": "a058ecf3266714440bef9ff26d7fe46a1ef60f768f0d5dee754b252b05688689",
+  "version": "6.0.1-rc.7+release.42383.32955d8d.gl",
+  "dt_s": 0.005,
+  "physics_device": "cpu",
+  "scope": "Standalone PhysX USD and equivalent gains, not Isaac Lab runtime",
+  "motor_parameters": "Test-only steer kp10000 kd100 effort1000; drive kp0 kd100 effort100 Nm",
+  "articulation_root": "/World/Robot/ffw_sg2_follower",
+  "joint_names": [
+    "left_wheel_steer",
+    "lift_joint",
+    "rear_wheel_steer",
+    "right_wheel_steer",
+    "left_wheel_drive",
+    "arm_l_joint1",
+    "arm_r_joint1",
+    "head_joint1",
+    "rear_wheel_drive",
+    "right_wheel_drive",
+    "arm_l_joint2",
+    "arm_r_joint2",
+    "head_joint2",
+    "arm_l_joint3",
+    "arm_r_joint3",
+    "arm_l_joint4",
+    "arm_r_joint4",
+    "arm_l_joint5",
+    "arm_r_joint5",
+    "arm_l_joint6",
+    "arm_r_joint6",
+    "arm_l_joint7",
+    "arm_r_joint7",
+    "gripper_l_joint1",
+    "gripper_l_joint3",
+    "gripper_r_joint1",
+    "gripper_r_joint3",
+    "gripper_l_joint2",
+    "gripper_l_joint4",
+    "gripper_r_joint2",
+    "gripper_r_joint4"
+  ],
+  "body_names": [
+    "world",
+    "left_wheel_steer_link",
+    "arm_base_link",
+    "rear_wheel_steer_link",
+    "right_wheel_steer_link",
+    "left_wheel_drive_link",
+    "arm_l_link1",
+    "arm_r_link1",
+    "head_link1",
+    "rear_wheel_drive_link",
+    "right_wheel_drive_link",
+    "arm_l_link2",
+    "arm_r_link2",
+    "head_link2",
+    "arm_l_link3",
+    "arm_r_link3",
+    "arm_l_link4",
+    "arm_r_link4",
+    "arm_l_link5",
+    "arm_r_link5",
+    "arm_l_link6",
+    "arm_r_link6",
+    "arm_l_link7",
+    "arm_r_link7",
+    "gripper_l_rh_p12_rn_r1",
+    "gripper_l_rh_p12_rn_l1",
+    "gripper_r_rh_p12_rn_r1",
+    "gripper_r_rh_p12_rn_l1",
+    "gripper_l_rh_p12_rn_r2",
+    "gripper_l_rh_p12_rn_l2",
+    "gripper_r_rh_p12_rn_r2",
+    "gripper_r_rh_p12_rn_l2"
+  ],
+  "mass_kg": 94.2238540649414,
+  "initial_stage_units_m": 1.0,
+  "initial": {
+    "root_position_m": [
+      -4.470348358154297e-08,
+      -9.313225746154785e-10,
+      -1.1920928955078125e-07
+    ],
+    "tilt_deg": 0.0,
+    "com_m": [
+      -0.04620596766471863,
+      0.003235130337998271,
+      0.5955784916877747
+    ],
+    "com_support_margin_m": 0.12231498211622238,
+    "wheel_centers_m": [
+      [
+        0.1370999962091446,
+        0.25540006160736084,
+        0.08649992942810059
+      ],
+      [
+        0.13710007071495056,
+        -0.2554001212120056,
+        0.08649985492229462
+      ],
+      [
+        -0.28990015387535095,
+        6.402842700481415e-09,
+        0.08649979531764984
+      ]
+    ],
+    "gripper_rad": {
+      "l": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "r": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "settle": {
+    "root_position_m": [
+      -4.470348358154297e-08,
+      -9.313225746154785e-10,
+      -1.1920928955078125e-07
+    ],
+    "tilt_deg": 0.0,
+    "com_m": [
+      -0.04620938375592232,
+      0.0032356539741158485,
+      0.5955784916877747
+    ],
+    "com_support_margin_m": 0.12231272459030151,
+    "wheel_centers_m": [
+      [
+        0.1370999962091446,
+        0.25540006160736084,
+        0.08649992942810059
+      ],
+      [
+        0.13710007071495056,
+        -0.2554001212120056,
+        0.08649985492229462
+      ],
+      [
+        -0.2899000346660614,
+        -5.192123353481293e-08,
+        0.08649994432926178
+      ]
+    ],
+    "gripper_rad": {
+      "l": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "r": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "gripper_tests": [
+    {
+      "command_rad": 0.8,
+      "positions_rad": {
+        "l": [
+          0.33306196331977844,
+          0.13654275238513947,
+          0.29253366589546204,
+          0.11855407059192657
+        ],
+        "r": [
+          0.3545718193054199,
+          0.16061392426490784,
+          0.3105713427066803,
+          0.12900310754776
+        ]
+      },
+      "max_follow_error_rad": 0.2255687117576599,
+      "max_master_error_rad": 0.4669380366802216
+    },
+    {
+      "command_rad": 1.0,
+      "positions_rad": {
+        "l": [
+          0.33972594141960144,
+          0.14181481301784515,
+          0.29831936955451965,
+          0.12169578671455383
+        ],
+        "r": [
+          0.36848440766334534,
+          0.17215806245803833,
+          0.3223700523376465,
+          0.13502556085586548
+        ]
+      },
+      "max_follow_error_rad": 0.23345884680747986,
+      "max_master_error_rad": 0.6602740585803986
+    },
+    {
+      "command_rad": 0.0,
+      "positions_rad": {
+        "l": [
+          9.100935130845755e-06,
+          2.1070609363960102e-05,
+          1.1611052286752965e-05,
+          3.242876846343279e-05
+        ],
+        "r": [
+          8.657841135573108e-06,
+          1.9432041881373152e-05,
+          1.143652025348274e-05,
+          3.379844929440878e-05
+        ]
+      },
+      "max_follow_error_rad": 2.5140608158835676e-05,
+      "max_master_error_rad": 9.100935130845755e-06
+    }
+  ],
+  "forward": {
+    "delta_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "expected_distance_m": 2.5949999999999998,
+    "state": {
+      "root_position_m": [
+        -4.470348358154297e-08,
+        -9.313225746154785e-10,
+        -1.1920928955078125e-07
+      ],
+      "tilt_deg": 0.0,
+      "com_m": [
+        -0.04620938375592232,
+        0.0032356553710997105,
+        0.5955784916877747
+      ],
+      "com_support_margin_m": 0.1223127469420433,
+      "wheel_centers_m": [
+        [
+          0.1370999962091446,
+          0.25540006160736084,
+          0.08649992942810059
+        ],
+        [
+          0.13710007071495056,
+          -0.2554001212120056,
+          0.08649985492229462
+        ],
+        [
+          -0.2899000346660614,
+          -2.9336661100387573e-08,
+          0.08649996668100357
+        ]
+      ],
+      "gripper_rad": {
+        "l": [
+          6.627260995843362e-14,
+          1.229715114459129e-13,
+          1.0593992859613682e-13,
+          3.051968671275579e-13
+        ],
+        "r": [
+          6.319318440924093e-14,
+          1.0327940488507464e-13,
+          1.1142389094720428e-13,
+          3.6876434523179513e-13
+        ]
+      }
+    }
+  },
+  "lateral": {
+    "delta_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "expected_distance_m": 1.73,
+    "state": {
+      "root_position_m": [
+        -4.470348358154297e-08,
+        -9.313225746154785e-10,
+        -1.1920928955078125e-07
+      ],
+      "tilt_deg": 0.0,
+      "com_m": [
+        -0.046366482973098755,
+        0.0033927769400179386,
+        0.5955784916877747
+      ],
+      "com_support_margin_m": 0.12209732085466385,
+      "wheel_centers_m": [
+        [
+          0.13709990680217743,
+          0.255400151014328,
+          0.0864998921751976
+        ],
+        [
+          0.1371000111103058,
+          -0.25540000200271606,
+          0.08649980276823044
+        ],
+        [
+          -0.2899000644683838,
+          -2.60770320892334e-08,
+          0.08649992942810059
+        ]
+      ],
+      "gripper_rad": {
+        "l": [
+          -1.0291277223906357e-24,
+          -8.296748921277234e-25,
+          -1.0321660201670944e-24,
+          -2.3666087480729077e-24
+        ],
+        "r": [
+          2.690629862350019e-22,
+          5.68365825622835e-22,
+          4.8381321468989925e-22,
+          2.581669263920821e-21
+        ]
+      }
+    }
+  },
+  "max_tilt_deg": 0.0,
+  "checks": {
+    "world_anchor_blocks_translation": true
+  },
+  "passed": true
+}

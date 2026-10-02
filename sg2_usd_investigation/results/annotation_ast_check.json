@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "check_type": "static AST and original byte preservation; no Isaac Sim execution",
+  "checks": [
+    {
+      "original": "/home/robotis/workspaces/hx5_isaac/cyclo_lab/source/cyclo_lab/cyclo_lab/assets/robots/FFW_SG2.py",
+      "review": "/home/robotis/workspaces/hx5_isaac/cyclo_lab/sg2_usd_investigation/review/FFW_SG2.review.py",
+      "proposal_blocks": 7,
+      "ast_identical": true,
+      "original_bytes_identical_after_removing_added_comments": true,
+      "original_sha256": "bf31fad831fd1735d3c221c567a004ba2ae976d039b947e6db46838155afb24e",
+      "review_sha256": "ee08d5db0a95a1f67447b22ff1c9e17e3eb7e61079381ea615bc867d7d61231f"
+    },
+    {
+      "original": "/home/robotis/workspaces/hx5_isaac/cyclo_lab/source/cyclo_lab/cyclo_lab/manager_based/manipulation/pick_place/config/ffw_sg2/pick_place_env_cfg.py",
+      "review": "/home/robotis/workspaces/hx5_isaac/cyclo_lab/sg2_usd_investigation/review/pick_place_env_cfg.review.py",
+      "proposal_blocks": 3,
+      "ast_identical": true,
+      "original_bytes_identical_after_removing_added_comments": true,
+      "original_sha256": "8a85e561c46b04b307f7c3198657d4bf674a41ec39b24fbb68c8ca6cfb13c0c0",
+      "review_sha256": "e19bb7f521c40295c3056d97b1df15c63396235c0e5bcbc206acd690bf69010e"
+    },
+    {
+      "original": "/home/robotis/workspaces/hx5_isaac/cyclo_lab/source/cyclo_lab/cyclo_lab/manager_based/manipulation/pick_place/config/ffw_sg2/joint_pos_env_cfg.py",
+      "review": "/home/robotis/workspaces/hx5_isaac/cyclo_lab/sg2_usd_investigation/review/joint_pos_env_cfg.review.py",
+      "proposal_blocks": 6,
+      "ast_identical": true,
+      "original_bytes_identical_after_removing_added_comments": true,
+      "original_sha256": "75d24b3541e47276cb20488beb74e4f416f6ac85da358855df1f5e0cd660fc41",
+      "review_sha256": "717104bbd0b7d6c6ce4bfb72eb9b6bad61a7ab5aa24a90096a64d9bcce37b28e"
+    }
+  ]
+}

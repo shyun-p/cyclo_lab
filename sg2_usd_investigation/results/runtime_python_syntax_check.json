@@ -1,0 +1,29 @@
+{
+  "validation": "python3 -m py_compile runtime/FFW_SG2_trial.py runtime/mobile_actions.py",
+  "syntax_check_passed": true,
+  "syntax_check_exit_code": 0,
+  "python_version": "3.12.3",
+  "isaaclab_runtime_tested": false,
+  "full_pick_place_task_tested": false,
+  "intended_environment": "Isaac Lab 2.3.0 and local Isaac Sim 6.0.1-rc.7; compatibility still requires runtime validation",
+  "scope": "Syntax only; neither module was imported or called locally. Independent standalone PhysX USD results do not validate these Isaac Lab factories.",
+  "official_files_modified": false,
+  "files": [
+    {
+      "path": "/home/robotis/workspaces/hx5_isaac/cyclo_lab/sg2_usd_investigation/runtime/FFW_SG2_trial.py",
+      "sha256": "dc872c033a9e32f941172bce29106e018317751a0f62a2eb2ab03492ed6f848e"
+    },
+    {
+      "path": "/home/robotis/workspaces/hx5_isaac/cyclo_lab/sg2_usd_investigation/runtime/mobile_actions.py",
+      "sha256": "5f4a99ada251a62f50e0651f993b525ffdca8be00c45f1a612b2d4286e29453a"
+    }
+  ],
+  "remaining_manual_task_changes": [
+    "Update camera and end-effector paths for the trial USD root",
+    "Define base pose/velocity reset for a floating base",
+    "Adapt action producers and recorded/Mimic assembly from 19 to 25 dimensions",
+    "Apply clamp_gripper_command explicitly on both produced gripper targets",
+    "Version observations, policies and datasets if wheel state/actions are added",
+    "Validate actual sensor outputs and full task with a compatible Isaac Lab environment"
+  ]
+}

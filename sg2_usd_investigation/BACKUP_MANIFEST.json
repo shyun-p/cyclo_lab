@@ -1,0 +1,734 @@
+{
+  "created_at": "2026-10-02T19:04:20.519727+09:00",
+  "purpose": "personal home continuation backup; not an official PR",
+  "repository": "https://github.com/shyun-p/cyclo_lab.git",
+  "branch": "wip/sg2-investigation-20261002",
+  "base_commit": "f4c0470a5e0af54a18327cf96967e8716d64dbc0",
+  "original_source_sha256": {
+    "source/cyclo_lab/data/robots/FFW/FFW_SG2.usd": "a058ecf3266714440bef9ff26d7fe46a1ef60f768f0d5dee754b252b05688689",
+    "source/cyclo_lab/cyclo_lab/assets/robots/FFW_SG2.py": "bf31fad831fd1735d3c221c567a004ba2ae976d039b947e6db46838155afb24e"
+  },
+  "existing_files_copied": 111,
+  "excluded": [
+    "*.log",
+    "*.pyc",
+    "__pycache__/**"
+  ],
+  "files": [
+    {
+      "path": "sg2_usd_investigation/REMAINING_AND_QUESTIONS.ko.txt",
+      "bytes": 4663,
+      "sha256": "4e2f857a695585029a5b093c7a4ef7edad7953220b0d70d15f7a312135d6b03e",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/REPORT.ko.txt",
+      "bytes": 14178,
+      "sha256": "99488c0dc23b44257c8f931a2f44cb1d90ed9909f32ad975324ae0ab746984dc",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/RUNBOOK.txt",
+      "bytes": 7368,
+      "sha256": "49424f5e73907ea05f4099269a4262d8637e16da87296f5a0a0a3ef506cc6cbf",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/annotation_ast_check.json",
+      "bytes": 1900,
+      "sha256": "21818dfe8cdfaf2c4ff45d355207a3038cc6f6aad3fd3989bbe13f7c75e23690",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/baseline.json",
+      "bytes": 622,
+      "sha256": "04b302d94673c3758a3a7288696d557b1e02e6da50215dabcd410ffa08009cd8",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/build_convex.json",
+      "bytes": 33501,
+      "sha256": "99d66cbd875fa97c973b2c01cfa714b4158a2f0049a9c5fed9bd0555d153553f",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/build_cylinder.json",
+      "bytes": 43025,
+      "sha256": "f4d3950f2241f707710d21f648038ae411987969c23afe64c03f65f1d76e1e3e",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/cfg_audit.json",
+      "bytes": 8928,
+      "sha256": "f2ec6517688765a1a3fba5ef8ae1db00f0ea50091b31420fdef13f885a3314c8",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/lab_config_51.json",
+      "bytes": 2493,
+      "sha256": "290b4d86e941f4c8f7f893aa571c878db1fc80bd35a87334d8a2f0ce11d0a260",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/manual_existing_601/head_rgb.png",
+      "bytes": 490143,
+      "sha256": "a4ba3a88babfa62c2ac4493cf5331328a467eb78ca6817b55b3e2ac09d61c0f5",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/manual_existing_601/robot_view.png",
+      "bytes": 1604246,
+      "sha256": "0e76f460adcea12b2e1d8d8f9378e1e7ba762caec24752faabf11b0390d378e7",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/manual_existing_601/session.json",
+      "bytes": 8069,
+      "sha256": "82c783574b6397842a68e564bd7d56e6a445118e1c47bca9f19c25b0dff52f16",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/manual_existing_601/wrist_left_rgb.png",
+      "bytes": 749435,
+      "sha256": "9e1d8ce3d426921461105e6c2a10ed1daa5947d797c771c72adccdb162304030",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/manual_existing_601/wrist_right_rgb.png",
+      "bytes": 718141,
+      "sha256": "73ff11baf5b46ee938da59f0adc049bef9651ee0a31a0cd42f3afa61556f7be5",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/manual_existing_wrist_601/head_rgb.png",
+      "bytes": 492668,
+      "sha256": "2eb2623b90953b2c5ffb0cb974674c605ed8dcb172a9f44ca9a3b0eb911e82d6",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/manual_existing_wrist_601/robot_view.png",
+      "bytes": 1612698,
+      "sha256": "ac3b824acece58323325c5025fa823fa8c951a50fb75c15213d8c3fdefc27b8b",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/manual_existing_wrist_601/session.json",
+      "bytes": 2096,
+      "sha256": "a900e3d431845cb34c734dcb658e69f5b769535fc3b40eeccf7c615346cb95d1",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/manual_existing_wrist_601/wrist_left_rgb.png",
+      "bytes": 746983,
+      "sha256": "60acf0657c5c7254e15da9e6b6d9284f00830f3cf1aaf3cd111122371fde9ebd",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/manual_existing_wrist_601/wrist_right_rgb.png",
+      "bytes": 720135,
+      "sha256": "1c433cec1a838b14b4af72f81bba4f832a7b38c0e50461472850b8b45c949311",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/manual_gui_601/first_timing_session.json",
+      "bytes": 8050,
+      "sha256": "eda2b14dc01bfec8659bf50f7f30a13fb11da2d1a11cdb8a9a7194e5010afa21",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/manual_gui_601/head_rgb.png",
+      "bytes": 793666,
+      "sha256": "6063e3d1237115e75bd7409104054e85d084ad8189ce2e463fcdd81ac3fc93e4",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/manual_gui_601/robot_view.png",
+      "bytes": 1841889,
+      "sha256": "0a28e1d289a95f5331a0300e1fa7a15a40cb854b8b0031f473b2844fd86a4be9",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/manual_gui_601/session.json",
+      "bytes": 13962,
+      "sha256": "1989fd3a1a3618cde2c6065535dd1fb70d31c3d9b9d1cba759d2a3698321118d",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/minimal_proposal_check.json",
+      "bytes": 387,
+      "sha256": "05f4c437207a7aa06c185241c1d97009a04ee2dcf215ca8a6861002e4ab856df",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/original_preservation.json",
+      "bytes": 577,
+      "sha256": "9aee2a86c0267d5a17357b76df5d43e57db1fd894f27c9e1412c368be9ea0270",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/physics_cylinder_601.json",
+      "bytes": 8399,
+      "sha256": "955afb08037da69db95fae953bfbb7b5cd512a4f16f74cb8bc8e242f2675adbd",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/physics_final_601.json",
+      "bytes": 24307,
+      "sha256": "122fd0b2911f84a02bb86b0d1b9172685bc3d44fafd0fb660ceaf732d02936b0",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/physics_original_gripper_off_601.json",
+      "bytes": 23412,
+      "sha256": "31883b9e2977dbffa9795ee51473a494c895f2df0fb097b2d636f475e335c314",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/physics_original_gripper_passive_601.json",
+      "bytes": 23425,
+      "sha256": "90c30046b1a5baaa0bc218bb4dbb2d5dc40ee0678994a97dba335bc715e0d910",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/physics_original_motor_601.json",
+      "bytes": 7657,
+      "sha256": "087a101b805489387a593f965901ac1113a764dffe2efef7399fdb6ea6ea6211",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/physics_trial_601.json",
+      "bytes": 8295,
+      "sha256": "e4b2133f002ed407ef2f59aad465acf050310e65eb7c9c7ba9b570117d24c8a4",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/remaining_checks.json",
+      "bytes": 5191,
+      "sha256": "974955ea90a8fe83d80dab2c3675e61251874795b9680eae88b1a951351c10ce",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/runtime_python_syntax_check.json",
+      "bytes": 1515,
+      "sha256": "d80cef6a1672796ac75d3425cf462b61e1ecd9af47a9be4b3bb209a63f6561b9",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/sensors_601/camera_left_depth_m.npy",
+      "bytes": 307328,
+      "sha256": "8ce0c32ee9ee8d21f73b7deb712fb942ba5fc27c6686693fb0f1c0ccee48d7d7",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/sensors_601/camera_left_rgb.png",
+      "bytes": 49623,
+      "sha256": "19a345970b865fd5a63bbdf0b80e6d79af61c44cccd7d429078bb17aacb1fe62",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/sensors_601/camera_right_depth_m.npy",
+      "bytes": 307328,
+      "sha256": "6ea201517fb46393c1edab8aa22b890e55cc56e85191639132e9b769d763d252",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/sensors_601/camera_right_rgb.png",
+      "bytes": 50478,
+      "sha256": "405b6621f7636c878ba8a8f52df58c475538c00ea3d2efd2274e27bda92420fc",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/sensors_601/runtime/sensor_scene.usda",
+      "bytes": 48240,
+      "sha256": "dcd9dddbd403cb663a092bc22eba32e9adfe19dac1422e798643504a0ce6102b",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/sensors_601/sensor_result.json",
+      "bytes": 10319,
+      "sha256": "7f7869bda387148aef4a9daef07c48c7149a3fc7a02bc30122721387fe082e70",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/sensors_final_601/camera_left_depth_m.npy",
+      "bytes": 307328,
+      "sha256": "757b3e284f697d2f166d502356ef786522b4a4fc752b5d46feaf6d2b863e9183",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/sensors_final_601/camera_left_rgb.png",
+      "bytes": 11358,
+      "sha256": "dde9df980a6a96684e8852592e580064c5952d09749ebf5d0e716371656da3bb",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/sensors_final_601/camera_right_depth_m.npy",
+      "bytes": 307328,
+      "sha256": "8721a5aba1df795b6bb68e554ae225c3dd7971b6cbce597326e3fb739d44f331",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/sensors_final_601/camera_right_rgb.png",
+      "bytes": 10652,
+      "sha256": "9a8824e5712db37d456e59de36bf913eb6a9630dc19df2d024e4fbba739bd7a0",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/sensors_final_601/runtime/sensor_scene.usda",
+      "bytes": 48286,
+      "sha256": "6d4d76e7aabb44e600fe0570cf7363d86a7395b05d5befc03826b96e2810d303",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/sensors_final_601/sensor_result.json",
+      "bytes": 13371,
+      "sha256": "a4496b4d140e192f30118b4bd65368d06c8eea17610e5f3841d36757d091f0b3",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/sensors_verified_601/camera_left_depth_m.npy",
+      "bytes": 307328,
+      "sha256": "757b3e284f697d2f166d502356ef786522b4a4fc752b5d46feaf6d2b863e9183",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/sensors_verified_601/camera_left_rgb.png",
+      "bytes": 11155,
+      "sha256": "d11648d1ce89c853a620c6a65a5d2c96becbfad55b8dfae338f88b560cd0d1e6",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/sensors_verified_601/camera_right_depth_m.npy",
+      "bytes": 307328,
+      "sha256": "8721a5aba1df795b6bb68e554ae225c3dd7971b6cbce597326e3fb739d44f331",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/sensors_verified_601/camera_right_rgb.png",
+      "bytes": 10751,
+      "sha256": "3e4092f17b5fe57cea179c76edab3411e853db76f403f28e30a6d78c7ade208c",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/sensors_verified_601/lidar_l_world_points_m.npy",
+      "bytes": 1088,
+      "sha256": "0b2d8cc908d48150635d7d695fb411fed429a6d4fc537806e16739849a6a12bd",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/sensors_verified_601/lidar_r_world_points_m.npy",
+      "bytes": 1100,
+      "sha256": "c29c6927d118161141a2888d1dc1257005a5d5e40e2b958d4a87196942605198",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/sensors_verified_601/runtime/sensor_scene.usda",
+      "bytes": 48286,
+      "sha256": "03b5851ef9ef32f7c9c26d811023f6befe8a98a3259e63088cf73b415b1ff27d",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/sensors_verified_601/sensor_result.json",
+      "bytes": 13765,
+      "sha256": "42128a551e3e6583df042f356039505fc7fb37151c9b1b89543af6c86c5a5ef4",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/sensors_wrist_601/camera_left_depth_m.npy",
+      "bytes": 307328,
+      "sha256": "757b3e284f697d2f166d502356ef786522b4a4fc752b5d46feaf6d2b863e9183",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/sensors_wrist_601/camera_left_rgb.png",
+      "bytes": 11304,
+      "sha256": "8ca03b57c2e3dc8860c83e9ddeb3440e701a4f2fa02b1d3a4e2a7009cc02f5e5",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/sensors_wrist_601/camera_right_depth_m.npy",
+      "bytes": 307328,
+      "sha256": "8721a5aba1df795b6bb68e554ae225c3dd7971b6cbce597326e3fb739d44f331",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/sensors_wrist_601/camera_right_rgb.png",
+      "bytes": 11116,
+      "sha256": "129c03a6eab8ff804ff68f4c4d2a1a87262b88b4a4740dd9dceae3c688460164",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/sensors_wrist_601/camera_wrist_left_depth_m.npy",
+      "bytes": 230528,
+      "sha256": "f56f1be7e6aca2529c30b4a7f133320e4e5af2ab898d0d372da9581cca7db193",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/sensors_wrist_601/camera_wrist_left_rgb.png",
+      "bytes": 29212,
+      "sha256": "f79aa1f3bbfc3fb3c682780fa46ff09eea249e6457c9e7dd05b651731a686a74",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/sensors_wrist_601/camera_wrist_right_depth_m.npy",
+      "bytes": 230528,
+      "sha256": "b622777a7bc3be3f96cab45e9059e66f23f837ce17fd220a29e81c9c80ce5479",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/sensors_wrist_601/camera_wrist_right_rgb.png",
+      "bytes": 27799,
+      "sha256": "6efd029f8e34aae350c9c1cb40a3fbffbb92982e116465ef42b1879bf63b00ec",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/sensors_wrist_601/lidar_l_world_points_m.npy",
+      "bytes": 1088,
+      "sha256": "0b2d8cc908d48150635d7d695fb411fed429a6d4fc537806e16739849a6a12bd",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/sensors_wrist_601/lidar_r_world_points_m.npy",
+      "bytes": 1100,
+      "sha256": "c29c6927d118161141a2888d1dc1257005a5d5e40e2b958d4a87196942605198",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/sensors_wrist_601/runtime/sensor_scene.usda",
+      "bytes": 60458,
+      "sha256": "c12a6a6b1c2526fe3190319a117d0e05c439310f70efd7ff9f568d2d96b9796e",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/sensors_wrist_601/sensor_result.json",
+      "bytes": 17169,
+      "sha256": "9e72f2e9e1acde209d6549e057ebf7abc66a44b39b530bb3f4b2494e568ee03b",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/static_audit.json",
+      "bytes": 337934,
+      "sha256": "87fd91904a2e35d0417452f154bac4b63437db6b2c8887cba7893d4fd86445ee",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/static_audit.table.txt",
+      "bytes": 5008,
+      "sha256": "9ea81cd55823f56f764a789f497fee2972ec072f383d2c03a0a07b183ecee8bb",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/static_final_audit.json",
+      "bytes": 339851,
+      "sha256": "3c9fa8aa652676ceb6535160918cea3e0b1232ef4cac9d0b2eaf98458a9a8b30",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/static_final_audit.table.txt",
+      "bytes": 5008,
+      "sha256": "097b4a6aee6550c1077f843b67e1176c22c156d2caf5560bca771244afc38425",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/static_trial_audit.json",
+      "bytes": 339365,
+      "sha256": "e0881ae28bc69ea0225baa1b7a6fd8db79feb058ba549c08bca887ead68379d3",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/static_trial_audit.table.txt",
+      "bytes": 5008,
+      "sha256": "097b4a6aee6550c1077f843b67e1176c22c156d2caf5560bca771244afc38425",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/task_path_audit.json",
+      "bytes": 2669,
+      "sha256": "b5f56dc53b935ed7d930875c69afec3075e42829f5d9bb895b100f19c9ab81d2",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/validation_runs_601.json",
+      "bytes": 1978,
+      "sha256": "7fb2dbdbbce4d56c19f931686d6314803133cce5a76bfb5aebe70c34598774b4",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/validation_runs_final_601.json",
+      "bytes": 1319,
+      "sha256": "aad1c47c2d52ad513acf53b658bc1f916e2d565af68968b46432f1d0e4525b8f",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/validation_runs_gripper_off_601.json",
+      "bytes": 738,
+      "sha256": "8a16841ddc5a8b7074c140df6610e746aea931875d9482df5bf853cc3fad32c1",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/validation_runs_gripper_passive_601.json",
+      "bytes": 749,
+      "sha256": "837e9cf825ef5d2bf58373813f2244626a8f67fd9d8a1f9e9e7f2075522027b2",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/validation_runs_sensors_601.json",
+      "bytes": 676,
+      "sha256": "e11dca51a2fd604eec17e3c9a7d7f957a05ff09ec1bb6442198bba8d436fa831",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/results/validation_runs_sensors_wrist_601.json",
+      "bytes": 662,
+      "sha256": "29fefef3d1d2e96e0dbbfeb3d34476083fa2ac76a1531eb37e69dac81da1a967",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/review/CHANGE_SCOPE.ko.txt",
+      "bytes": 3491,
+      "sha256": "72b0e50069469a0eb4fb63398fc3a5164f715c3c10d23a33e75f4280f979deaf",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/review/FFW_SG2.physics.review.usda",
+      "bytes": 84145,
+      "sha256": "b79ce7bb05678088b101e9a14076994477d43c4f4bdc8150e7f30eb8898ddc68",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/review/FFW_SG2.review.py",
+      "bytes": 8780,
+      "sha256": "ee08d5db0a95a1f67447b22ff1c9e17e3eb7e61079381ea615bc867d7d61231f",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/review/FFW_SG2_mobile.proposal.patch",
+      "bytes": 1877,
+      "sha256": "56d5d5431a525c96255bfbcbeb486d3526406fc80e2ed7d2ea490689607205be",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/review/FFW_SG2_mobile.proposal.py",
+      "bytes": 1744,
+      "sha256": "3705fe54c8efbf317163335d3bf3ebe000180829035ebef701c421aaab5701a4",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/review/FFW_SG2_trial.physics.review.usda",
+      "bytes": 86290,
+      "sha256": "97ced9853dff857c536efd5163332381f4dbe7cb78e88d1294347277cf7c6963",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/review/joint_pos_env_cfg.review.py",
+      "bytes": 12249,
+      "sha256": "717104bbd0b7d6c6ce4bfb72eb9b6bad61a7ab5aa24a90096a64d9bcce37b28e",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/review/pick_place_env_cfg.review.py",
+      "bytes": 16278,
+      "sha256": "e19bb7f521c40295c3056d97b1df15c63396235c0e5bcbc206acd690bf69010e",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/runtime/FFW_SG2_convex.usd",
+      "bytes": 47602314,
+      "sha256": "afbf599cec16cf91dfcd4a2638a67a623721dabeb5d1744257d2c3101cecba21",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/runtime/FFW_SG2_cylinder.usd",
+      "bytes": 47601558,
+      "sha256": "82aa16b83a431fbdf24f068c0982e47af06ce09c50953cf91a7be21bb995c4d8",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/runtime/FFW_SG2_head_sensors_before_wrist.usda",
+      "bytes": 15420,
+      "sha256": "29dda8eaf2fa23a3250e4173fbccb7ab17f7a083f114655c21318324db324614",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/runtime/FFW_SG2_trial.py",
+      "bytes": 3426,
+      "sha256": "a8c695f65f87b940c1e43d471906467c21c2176b068cdf2486d8f7c4149def15",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/runtime/FFW_SG2_trial.usd",
+      "bytes": 47601558,
+      "sha256": "82aa16b83a431fbdf24f068c0982e47af06ce09c50953cf91a7be21bb995c4d8",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/runtime/FFW_SG2_v4_source.usd",
+      "bytes": 47597037,
+      "sha256": "a26ce190c929409208c132449fad23e17b6e546a6d72d019c65e35790fd8d683",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/runtime/FFW_SG2_with_sensors.usda",
+      "bytes": 18716,
+      "sha256": "13a08ecb2cff369246b8cd328be2fe86a12898946c5afafcd07e431fd5c75eef",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/runtime/mobile_actions.py",
+      "bytes": 3313,
+      "sha256": "5f4a99ada251a62f50e0651f993b525ffdca8be00c45f1a612b2d4286e29453a",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/runtime/sensors.review.usda",
+      "bytes": 20452,
+      "sha256": "677d4c8ffc2fac9a0b68ae886866a4b01b64e989662ba9d32999ccc8f5221263",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/runtime/swerve_controller.py",
+      "bytes": 1735,
+      "sha256": "bf2de6be0155bf2ab905e9892635d2c57db2b786276aa30804ffe84631b0e9bd",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/runtime/wrist_cameras.py",
+      "bytes": 3469,
+      "sha256": "38ed5060828b57b5388481ef811af36e4069df3cc85d335ba1e3bfea0ddfa588",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/scripts/annotation_ast_check.py",
+      "bytes": 15024,
+      "sha256": "a735a8d7762db09bdd4c7f2a59a39410684284379af0c4b89ee111cd2316064e",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/scripts/build_trial.py",
+      "bytes": 9441,
+      "sha256": "4233f6140239f61420e18607c40739558cb5b78f9bda76692281b7a0cb3de8d6",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/scripts/check_existing_gui_601.py",
+      "bytes": 1008,
+      "sha256": "03a9879c4512bff2ca977840717948faf1616a2d528b69b5b3f3d2aa0ba2a6a6",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/scripts/check_remaining.py",
+      "bytes": 5400,
+      "sha256": "f52bc5ef1e39fb65a8aceae2a16b2460b7e01215773a48b0d58fd1578846553a",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/scripts/collision_probe_helpers.py",
+      "bytes": 10517,
+      "sha256": "223cedb915bf5b412ff166adb9bd88cf075b8eaf6112834fbd4f03c80e9550de",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/scripts/lab_config_probe.py",
+      "bytes": 4174,
+      "sha256": "ac632ee6c2aaeb30a8e5c61e8df5b1390be55d094365802799511f440272bbf1",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/scripts/manual_gui_601.py",
+      "bytes": 19128,
+      "sha256": "58005e42770f42c9c986ab8139a426823209b9c3897c64d7448d45e404456868",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/scripts/open_sg2_in_existing.py",
+      "bytes": 22001,
+      "sha256": "f0d617a644097db3699777798f925473652fc16551e68ca128f68ed1b7468fae",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/scripts/physics_probe_601.py",
+      "bytes": 12135,
+      "sha256": "e8b6a7ae09de23bdf587911f7c7c66521cb090c332e1c1ed85991194a5aee085",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/scripts/run_validation_601.py",
+      "bytes": 3679,
+      "sha256": "a8f24a29780dc8dce11985ed94d524a44f65e57a1853aa1c8b17b3a10dd8546e",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/scripts/sensor_probe_601.py",
+      "bytes": 30540,
+      "sha256": "a6b39567867580387ac70a4befc39635987fc350d6c2c098e4f2d2fcc63b08f8",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/scripts/static_audit.py",
+      "bytes": 26391,
+      "sha256": "f3fd585a8ef8eb8ae35874f4e002c31681a421ec710e3b3299a3598c42f29449",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/scripts/task_path_audit.py",
+      "bytes": 2958,
+      "sha256": "0fad15d1e540e9026c4236b5df6178403cb091e9810297048290ef5bea2d5a51",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/scripts/write_report.py",
+      "bytes": 20119,
+      "sha256": "9f87492b371ec258eb3c65eafd4eaabd87795e2fe49028449a1a92bda574ed81",
+      "source": "existing investigation file"
+    },
+    {
+      "path": "sg2_usd_investigation/reference/ffw_sg2_follower.urdf",
+      "bytes": 100816,
+      "sha256": "c5ec27133805e2ec1bdbd3c290f563dda0835cf2e22224b6e29a5f0216dbf9eb",
+      "source": "pinned official ROBOTIS ai_worker URDF, unmodified"
+    },
+    {
+      "path": "sg2_usd_investigation/reference/ai_worker_LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "source": "official ai_worker Apache-2.0 license, unmodified"
+    },
+    {
+      "path": "sg2_usd_investigation/reference/SOURCE.ko.txt",
+      "bytes": 670,
+      "sha256": "aab23f482df9181a548a79024cc5d5d3faf48850d10f39f1a27d1fab5471dbe9",
+      "source": "home continuation provenance"
+    },
+    {
+      "path": "sg2_usd_investigation/review/pr_mobile_candidate/FFW_SG2_mobile.py",
+      "bytes": 2047,
+      "sha256": "4c880a61c831e421f74f3044c4fbe5d77f0d353c262c4ae014616625bed06fec",
+      "source": "unapplied PR draft, syntax checked only"
+    },
+    {
+      "path": "sg2_usd_investigation/review/pr_mobile_candidate/ffw_sg2_mobile.py",
+      "bytes": 8288,
+      "sha256": "332d71b71c78ef74b08fd12e734ab269fa42f7e3bc62ba875348ecdc9887ea38",
+      "source": "unapplied PR draft, syntax checked only"
+    },
+    {
+      "path": "sg2_usd_investigation/review/pr_mobile_candidate/sg2_mobile.md",
+      "bytes": 2532,
+      "sha256": "5663e02a39932bcb8251d116f12692fbf1d291d6f8aab4048f4bddf437f2533d",
+      "source": "unapplied PR draft, syntax checked only"
+    },
+    {
+      "path": "sg2_usd_investigation/review/pr_mobile_candidate/STATUS.ko.txt",
+      "bytes": 648,
+      "sha256": "e0dd2ed01723ed54425b8c3ae0caa42b4ef634b879202c70e002a8ea6ef09749",
+      "source": "unapplied draft status"
+    },
+    {
+      "path": "sg2_usd_investigation/HOME_CONTINUE.ko.txt",
+      "bytes": 4093,
+      "sha256": "ade1f1c21a4c14b91c4ea4b3a706ea9b5ecc1775b1e5605e30cc53c3175a5998",
+      "source": "home continuation guide"
+    }
+  ],
+  "manifest_excluded_from_self_hash": true
+}

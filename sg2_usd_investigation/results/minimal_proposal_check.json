@@ -1,0 +1,12 @@
+{
+  "proposal_only": true,
+  "target": "source/cyclo_lab/cyclo_lab/assets/robots/FFW_SG2_mobile.py",
+  "new_file_lines": 37,
+  "existing_lines_modified": 0,
+  "python_syntax_passed": true,
+  "full_isaaclab_runtime_tested": false,
+  "original_hash_matches": {
+    "source/cyclo_lab/data/robots/FFW/FFW_SG2.usd": true,
+    "source/cyclo_lab/cyclo_lab/assets/robots/FFW_SG2.py": true
+  }
+}

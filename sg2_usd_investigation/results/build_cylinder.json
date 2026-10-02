@@ -1,0 +1,1831 @@
+{
+  "source_v4": "/home/robotis/workspaces/hx5_isaac/sg2_usd_investigation/regen/v4/FFW_SG2_v2.usd",
+  "source_sha256": "a26ce190c929409208c132449fad23e17b6e546a6d72d019c65e35790fd8d683",
+  "trial": "/home/robotis/workspaces/hx5_isaac/cyclo_lab/sg2_usd_investigation/runtime/FFW_SG2_cylinder.usd",
+  "trial_sha256": "82aa16b83a431fbdf24f068c0982e47af06ce09c50953cf91a7be21bb995c4d8",
+  "collider": "cylinder",
+  "changes": [
+    {
+      "prim": "/ffw_sg2_follower/base_link",
+      "mass_properties_from_pinned_urdf": true,
+      "before": {
+        "mass": 35.989437103271484,
+        "com": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "diagonal": [
+          1.7254735231399536,
+          3.9837474822998047,
+          2.846139430999756
+        ]
+      },
+      "com_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "inertia_tensor_kg_m2": [
+        [
+          1.7254735,
+          6.4717955e-06,
+          1.8902046e-05
+        ],
+        [
+          6.4717955e-06,
+          3.9837475,
+          1.7165673e-05
+        ],
+        [
+          1.8902046e-05,
+          1.7165673e-05,
+          2.8461395
+        ]
+      ]
+    },
+    {
+      "prim": "/ffw_sg2_follower/left_wheel_steer_link",
+      "mass_properties_from_pinned_urdf": true,
+      "before": {
+        "mass": 0.7550951242446899,
+        "com": [
+          0.009802768938243389,
+          -0.054712407290935516,
+          -0.1376533806324005
+        ],
+        "diagonal": [
+          0.0028302150312811136,
+          0.00362423830665648,
+          0.0016087319236248732
+        ]
+      },
+      "com_m": [
+        0.0098027693,
+        -0.054712409,
+        -0.13765338
+      ],
+      "inertia_tensor_kg_m2": [
+        [
+          0.0027973266,
+          -3.2908078e-05,
+          -0.00019506718
+        ],
+        [
+          -3.2908078e-05,
+          0.0035822649,
+          -0.00028532907
+        ],
+        [
+          -0.00019506718,
+          -0.00028532907,
+          0.001683594
+        ]
+      ]
+    },
+    {
+      "prim": "/ffw_sg2_follower/left_wheel_drive_link",
+      "mass_properties_from_pinned_urdf": true,
+      "before": {
+        "mass": 3.7954604625701904,
+        "com": [
+          0.0,
+          -0.001499601756222546,
+          0.0
+        ],
+        "diagonal": [
+          0.0071878815069794655,
+          0.011563998647034168,
+          0.007187976967543364
+        ]
+      },
+      "com_m": [
+        0.0,
+        -0.0014996017,
+        0.0
+      ],
+      "inertia_tensor_kg_m2": [
+        [
+          0.0071878815,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.011563999,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.007187977
+        ]
+      ]
+    },
+    {
+      "prim": "/ffw_sg2_follower/lidar_l_link",
+      "mass_properties_from_pinned_urdf": true,
+      "before": {
+        "mass": 0.10000000149011612,
+        "com": "USD unspecified CoM sentinel (-inf,-inf,-inf)",
+        "diagonal": [
+          9.999999747378752e-05,
+          9.999999747378752e-05,
+          9.999999747378752e-05
+        ]
+      },
+      "com_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "inertia_tensor_kg_m2": [
+        [
+          0.0001,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0001,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0001
+        ]
+      ]
+    },
+    {
+      "prim": "/ffw_sg2_follower/lidar_r_link",
+      "mass_properties_from_pinned_urdf": true,
+      "before": {
+        "mass": 0.10000000149011612,
+        "com": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "diagonal": [
+          9.999999747378752e-05,
+          9.999999747378752e-05,
+          9.999999747378752e-05
+        ]
+      },
+      "com_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "inertia_tensor_kg_m2": [
+        [
+          0.0001,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0001,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0001
+        ]
+      ]
+    },
+    {
+      "prim": "/ffw_sg2_follower/lift_link",
+      "mass_properties_from_pinned_urdf": true,
+      "before": {
+        "mass": 17.899999618530273,
+        "com": [
+          -0.12869878113269806,
+          -1.604580756975338e-05,
+          0.8945601582527161
+        ],
+        "diagonal": [
+          0.010241215117275715,
+          0.01027049869298935,
+          5.058517854195088e-05
+        ]
+      },
+      "com_m": [
+        -0.12869878,
+        -1.6045808e-05,
+        0.89456017
+      ],
+      "inertia_tensor_kg_m2": [
+        [
+          0.0100947,
+          -3.56e-08,
+          0.0012131
+        ],
+        [
+          -3.56e-08,
+          0.0102705,
+          7.02e-08
+        ],
+        [
+          0.0012131,
+          7.02e-08,
+          0.0001971
+        ]
+      ]
+    },
+    {
+      "prim": "/ffw_sg2_follower/arm_base_link",
+      "mass_properties_from_pinned_urdf": true,
+      "before": {
+        "mass": 6.193955898284912,
+        "com": [
+          -0.01492287777364254,
+          0.0027315225452184677,
+          -0.043425265699625015
+        ],
+        "diagonal": [
+          0.10837475955486298,
+          0.05420979484915733,
+          0.07962862402200699
+        ]
+      },
+      "com_m": [
+        -0.014922878,
+        0.0027315225,
+        -0.043425264
+      ],
+      "inertia_tensor_kg_m2": [
+        [
+          0.10828866,
+          2.9296925e-06,
+          -0.0015727508
+        ],
+        [
+          2.9296925e-06,
+          0.054323697,
+          0.0016989706
+        ],
+        [
+          -0.0015727508,
+          0.0016989706,
+          0.079600843
+        ]
+      ]
+    },
+    {
+      "prim": "/ffw_sg2_follower/arm_l_link1",
+      "mass_properties_from_pinned_urdf": true,
+      "before": {
+        "mass": 2.0013322830200195,
+        "com": [
+          0.014210373163223267,
+          0.11553718149662018,
+          0.00011206440103705972
+        ],
+        "diagonal": [
+          0.002403079764917493,
+          0.0029695613775402308,
+          0.0033655886072665453
+        ]
+      },
+      "com_m": [
+        0.014210373,
+        0.11553718,
+        0.0001120644
+      ],
+      "inertia_tensor_kg_m2": [
+        [
+          0.0025075577,
+          -0.00021963558,
+          1.1512519e-05
+        ],
+        [
+          -0.00021963558,
+          0.0028652997,
+          -2.3110079e-06
+        ],
+        [
+          1.1512519e-05,
+          -2.3110079e-06,
+          0.0033653716
+        ]
+      ]
+    },
+    {
+      "prim": "/ffw_sg2_follower/arm_l_link2",
+      "mass_properties_from_pinned_urdf": true,
+      "before": {
+        "mass": 2.128261089324951,
+        "com": [
+          0.009109841659665108,
+          -0.00010530165309319273,
+          -0.14386406540870667
+        ],
+        "diagonal": [
+          0.010720290243625641,
+          0.010888402350246906,
+          0.002424410777166486
+        ]
+      },
+      "com_m": [
+        0.0091098413,
+        -0.00010530165,
+        -0.14386407
+      ],
+      "inertia_tensor_kg_m2": [
+        [
+          0.0099761666,
+          -1.4206416e-06,
+          -0.002370609
+        ],
+        [
+          -1.4206416e-06,
+          0.010888353,
+          4.8321415e-06
+        ],
+        [
+          -0.002370609,
+          4.8321415e-06,
+          0.0031685827
+        ]
+      ]
+    },
+    {
+      "prim": "/ffw_sg2_follower/arm_l_link3",
+      "mass_properties_from_pinned_urdf": true,
+      "before": {
+        "mass": 1.6847550868988037,
+        "com": [
+          0.029875373467803,
+          0.013913949020206928,
+          -0.12101390212774277
+        ],
+        "diagonal": [
+          0.0034080990590155125,
+          0.0029097935184836388,
+          0.0018336315406486392
+        ]
+      },
+      "com_m": [
+        0.029875373,
+        0.013913949,
+        -0.1210139
+      ],
+      "inertia_tensor_kg_m2": [
+        [
+          0.0028780772,
+          -0.00026152652,
+          0.00066794083
+        ],
+        [
+          -0.00026152652,
+          0.0027070961,
+          0.00032962522
+        ],
+        [
+          0.00066794083,
+          0.00032962522,
+          0.0025663506
+        ]
+      ]
+    },
+    {
+      "prim": "/ffw_sg2_follower/arm_l_link4",
+      "mass_properties_from_pinned_urdf": true,
+      "before": {
+        "mass": 1.5082143545150757,
+        "com": [
+          -0.038538653403520584,
+          0.009807229042053223,
+          -0.1313122808933258
+        ],
+        "diagonal": [
+          0.0063344864174723625,
+          0.0062926593236625195,
+          0.0014282716438174248
+        ]
+      },
+      "com_m": [
+        -0.038538653,
+        0.0098072286,
+        -0.13131228
+      ],
+      "inertia_tensor_kg_m2": [
+        [
+          0.0062523038,
+          -0.00021627982,
+          -0.00051136601
+        ],
+        [
+          -0.00021627982,
+          0.0057050864,
+          -0.0015977591
+        ],
+        [
+          -0.00051136601,
+          -0.0015977591,
+          0.0020980278
+        ]
+      ]
+    },
+    {
+      "prim": "/ffw_sg2_follower/arm_l_link5",
+      "mass_properties_from_pinned_urdf": true,
+      "before": {
+        "mass": 1.3917831182479858,
+        "com": [
+          -3.122616180917248e-05,
+          0.01681922748684883,
+          -0.0987381562590599
+        ],
+        "diagonal": [
+          0.001885676640085876,
+          0.0012477189302444458,
+          0.0017268846277147532
+        ]
+      },
+      "com_m": [
+        -3.1226161e-05,
+        0.016819227,
+        -0.098738156
+      ],
+      "inertia_tensor_kg_m2": [
+        [
+          0.0018856721,
+          1.3269158e-06,
+          2.4184848e-07
+        ],
+        [
+          1.3269158e-06,
+          0.0012852729,
+          0.00012877617
+        ],
+        [
+          2.4184848e-07,
+          0.00012877617,
+          0.0016893353
+        ]
+      ]
+    },
+    {
+      "prim": "/ffw_sg2_follower/arm_l_link6",
+      "mass_properties_from_pinned_urdf": true,
+      "before": {
+        "mass": 0.6577073931694031,
+        "com": [
+          0.002243891591206193,
+          0.018764104694128036,
+          -0.06480557471513748
+        ],
+        "diagonal": [
+          0.0014184766914695501,
+          0.001619266695342958,
+          0.0005382471135817468
+        ]
+      },
+      "com_m": [
+        0.0022438917,
+        0.018764105,
+        -0.064805576
+      ],
+      "inertia_tensor_kg_m2": [
+        [
+          0.0014161387,
+          2.8390103e-05,
+          3.5822295e-05
+        ],
+        [
+          2.8390103e-05,
+          0.0011423344,
+          -0.00053568368
+        ],
+        [
+          3.5822295e-05,
+          -0.00053568368,
+          0.0010175176
+        ]
+      ]
+    },
+    {
+      "prim": "/ffw_sg2_follower/arm_l_link7",
+      "mass_properties_from_pinned_urdf": true,
+      "before": {
+        "mass": 0.1668563038110733,
+        "com": [
+          0.02550659328699112,
+          0.0,
+          -0.055395327508449554
+        ],
+        "diagonal": [
+          0.00010320037108613178,
+          0.00045245286310091615,
+          0.0004160748503636569
+        ]
+      },
+      "com_m": [
+        0.025506593,
+        0.0,
+        -0.055395331
+      ],
+      "inertia_tensor_kg_m2": [
+        [
+          0.00010358679,
+          0.0,
+          1.0988701e-05
+        ],
+        [
+          0.0,
+          0.00045245287,
+          0.0
+        ],
+        [
+          1.0988701e-05,
+          0.0,
+          0.00041568844
+        ]
+      ]
+    },
+    {
+      "prim": "/ffw_sg2_follower/camera_left_link",
+      "mass_properties_from_pinned_urdf": true,
+      "before": {
+        "mass": 0.07199999690055847,
+        "com": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "diagonal": [
+          0.003881243057549,
+          0.0004989400040358305,
+          0.0038792570121586323
+        ]
+      },
+      "com_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "inertia_tensor_kg_m2": [
+        [
+          0.003881243,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.00049894,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.003879257
+        ]
+      ]
+    },
+    {
+      "prim": "/ffw_sg2_follower/gripper_l_rh_p12_rn_base",
+      "mass_properties_from_pinned_urdf": true,
+      "before": {
+        "mass": 0.23600000143051147,
+        "com": [
+          0.0,
+          0.0,
+          0.03200000151991844
+        ],
+        "diagonal": [
+          9.999999974752427e-07,
+          9.999999974752427e-07,
+          9.999999974752427e-07
+        ]
+      },
+      "com_m": [
+        0.0,
+        0.0,
+        0.032
+      ],
+      "inertia_tensor_kg_m2": [
+        [
+          1e-06,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1e-06,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1e-06
+        ]
+      ]
+    },
+    {
+      "prim": "/ffw_sg2_follower/gripper_l_rh_p12_rn_r1",
+      "mass_properties_from_pinned_urdf": true,
+      "before": {
+        "mass": 0.06800000369548798,
+        "com": [
+          0.0,
+          0.03400000184774399,
+          0.004000000189989805
+        ],
+        "diagonal": [
+          9.999999974752427e-07,
+          9.999999974752427e-07,
+          9.999999974752427e-07
+        ]
+      },
+      "com_m": [
+        0.0,
+        0.034,
+        0.004
+      ],
+      "inertia_tensor_kg_m2": [
+        [
+          1e-06,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1e-06,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1e-06
+        ]
+      ]
+    },
+    {
+      "prim": "/ffw_sg2_follower/gripper_l_rh_p12_rn_r2",
+      "mass_properties_from_pinned_urdf": true,
+      "before": {
+        "mass": 0.02199999988079071,
+        "com": [
+          0.0,
+          0.006000000052154064,
+          0.010999999940395355
+        ],
+        "diagonal": [
+          9.999999974752427e-07,
+          9.999999974752427e-07,
+          9.999999974752427e-07
+        ]
+      },
+      "com_m": [
+        0.0,
+        0.006,
+        0.011
+      ],
+      "inertia_tensor_kg_m2": [
+        [
+          1e-06,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1e-06,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1e-06
+        ]
+      ]
+    },
+    {
+      "prim": "/ffw_sg2_follower/gripper_l_rh_p12_rn_l1",
+      "mass_properties_from_pinned_urdf": true,
+      "before": {
+        "mass": 0.06800000369548798,
+        "com": [
+          0.0,
+          -0.03400000184774399,
+          0.004000000189989805
+        ],
+        "diagonal": [
+          9.999999974752427e-07,
+          9.999999974752427e-07,
+          9.999999974752427e-07
+        ]
+      },
+      "com_m": [
+        0.0,
+        -0.034,
+        0.004
+      ],
+      "inertia_tensor_kg_m2": [
+        [
+          1e-06,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1e-06,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1e-06
+        ]
+      ]
+    },
+    {
+      "prim": "/ffw_sg2_follower/gripper_l_rh_p12_rn_l2",
+      "mass_properties_from_pinned_urdf": true,
+      "before": {
+        "mass": 0.02199999988079071,
+        "com": [
+          0.0,
+          -0.006000000052154064,
+          0.010999999940395355
+        ],
+        "diagonal": [
+          9.999999974752427e-07,
+          9.999999974752427e-07,
+          9.999999974752427e-07
+        ]
+      },
+      "com_m": [
+        0.0,
+        -0.006,
+        0.011
+      ],
+      "inertia_tensor_kg_m2": [
+        [
+          1e-06,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1e-06,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1e-06
+        ]
+      ]
+    },
+    {
+      "prim": "/ffw_sg2_follower/arm_r_link1",
+      "mass_properties_from_pinned_urdf": true,
+      "before": {
+        "mass": 2.0013322830200195,
+        "com": [
+          0.014210373163223267,
+          -0.11553718149662018,
+          -0.00011206440103705972
+        ],
+        "diagonal": [
+          0.002403079764917493,
+          0.0029695613775402308,
+          0.0033655886072665453
+        ]
+      },
+      "com_m": [
+        0.014210373,
+        -0.11553718,
+        -0.0001120644
+      ],
+      "inertia_tensor_kg_m2": [
+        [
+          0.0025075577,
+          0.00021963558,
+          -1.1512519e-05
+        ],
+        [
+          0.00021963558,
+          0.0028652997,
+          -2.3110079e-06
+        ],
+        [
+          -1.1512519e-05,
+          -2.3110079e-06,
+          0.0033653716
+        ]
+      ]
+    },
+    {
+      "prim": "/ffw_sg2_follower/arm_r_link2",
+      "mass_properties_from_pinned_urdf": true,
+      "before": {
+        "mass": 2.128261089324951,
+        "com": [
+          0.009109841659665108,
+          -0.00010530165309319273,
+          -0.14386406540870667
+        ],
+        "diagonal": [
+          0.010720290243625641,
+          0.010888402350246906,
+          0.002424410777166486
+        ]
+      },
+      "com_m": [
+        0.0091098413,
+        -0.00010530165,
+        -0.14386407
+      ],
+      "inertia_tensor_kg_m2": [
+        [
+          0.0099761666,
+          -1.4206416e-06,
+          -0.002370609
+        ],
+        [
+          -1.4206416e-06,
+          0.010888353,
+          4.8321415e-06
+        ],
+        [
+          -0.002370609,
+          4.8321415e-06,
+          0.0031685827
+        ]
+      ]
+    },
+    {
+      "prim": "/ffw_sg2_follower/arm_r_link3",
+      "mass_properties_from_pinned_urdf": true,
+      "before": {
+        "mass": 1.6847550868988037,
+        "com": [
+          0.029845764860510826,
+          -0.013922958634793758,
+          -0.12104351073503494
+        ],
+        "diagonal": [
+          0.0034068231470882893,
+          0.0029092752374708652,
+          0.0018327799625694752
+        ]
+      },
+      "com_m": [
+        0.029845765,
+        -0.013922959,
+        -0.12104351
+      ],
+      "inertia_tensor_kg_m2": [
+        [
+          0.0028779712,
+          0.00026321599,
+          0.00066779985
+        ],
+        [
+          0.00026321599,
+          0.0027073784,
+          -0.00032759299
+        ],
+        [
+          0.00066779985,
+          -0.00032759299,
+          0.0025635286
+        ]
+      ]
+    },
+    {
+      "prim": "/ffw_sg2_follower/arm_r_link4",
+      "mass_properties_from_pinned_urdf": true,
+      "before": {
+        "mass": 1.4942511320114136,
+        "com": [
+          -0.03867746889591217,
+          -0.009308010339736938,
+          -0.13229712843894958
+        ],
+        "diagonal": [
+          0.00607253797352314,
+          0.006115192547440529,
+          0.0014140503481030464
+        ]
+      },
+      "com_m": [
+        -0.038677468,
+        -0.0093080099,
+        -0.13229713
+      ],
+      "inertia_tensor_kg_m2": [
+        [
+          0.0060323579,
+          0.00020289973,
+          -0.00048540519
+        ],
+        [
+          0.00020289973,
+          0.0055364235,
+          0.0015071246
+        ],
+        [
+          -0.00048540519,
+          0.0015071246,
+          0.0020329997
+        ]
+      ]
+    },
+    {
+      "prim": "/ffw_sg2_follower/arm_r_link5",
+      "mass_properties_from_pinned_urdf": true,
+      "before": {
+        "mass": 1.3917831182479858,
+        "com": [
+          0.000838768610265106,
+          -0.01679849810898304,
+          -0.0987381562590599
+        ],
+        "diagonal": [
+          0.001884527737274766,
+          0.0012487790081650019,
+          0.0017269733361899853
+        ]
+      },
+      "com_m": [
+        0.0008387686,
+        -0.016798499,
+        -0.098738156
+      ],
+      "inertia_tensor_kg_m2": [
+        [
+          0.0018824928,
+          3.480391e-05,
+          6.8067431e-06
+        ],
+        [
+          3.480391e-05,
+          0.0012884522,
+          -0.00012859637
+        ],
+        [
+          6.8067431e-06,
+          -0.00012859637,
+          0.0016893353
+        ]
+      ]
+    },
+    {
+      "prim": "/ffw_sg2_follower/arm_r_link6",
+      "mass_properties_from_pinned_urdf": true,
+      "before": {
+        "mass": 0.6577073931694031,
+        "com": [
+          0.0032674912363290787,
+          -0.018612589687108994,
+          -0.06479261815547943
+        ],
+        "diagonal": [
+          0.001418036874383688,
+          0.0016188507433980703,
+          0.0005382123054005206
+        ]
+      },
+      "com_m": [
+        0.0032674912,
+        -0.01861259,
+        -0.064792616
+      ],
+      "inertia_tensor_kg_m2": [
+        [
+          0.0014179762,
+          -1.325841e-05,
+          6.5344079e-06
+        ],
+        [
+          -1.325841e-05,
+          0.0011396474,
+          0.00053667073
+        ],
+        [
+          6.5344079e-06,
+          0.00053667073,
+          0.0010174762
+        ]
+      ]
+    },
+    {
+      "prim": "/ffw_sg2_follower/arm_r_link7",
+      "mass_properties_from_pinned_urdf": true,
+      "before": {
+        "mass": 0.1668563038110733,
+        "com": [
+          0.025468362495303154,
+          0.0013960012001916766,
+          -0.055395327508449554
+        ],
+        "diagonal": [
+          0.00010320036381017417,
+          0.00045245286310091615,
+          0.0004160748503636569
+        ]
+      },
+      "com_m": [
+        0.025468362,
+        0.0013960012,
+        -0.055395331
+      ],
+      "inertia_tensor_kg_m2": [
+        [
+          0.00010463181,
+          -1.9065159e-05,
+          1.0972233e-05
+        ],
+        [
+          -1.9065159e-05,
+          0.00045140785,
+          6.0137164e-07
+        ],
+        [
+          1.0972233e-05,
+          6.0137164e-07,
+          0.00041568844
+        ]
+      ]
+    },
+    {
+      "prim": "/ffw_sg2_follower/camera_right_link",
+      "mass_properties_from_pinned_urdf": true,
+      "before": {
+        "mass": 0.07199999690055847,
+        "com": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "diagonal": [
+          0.003881243057549,
+          0.0004989400040358305,
+          0.0038792570121586323
+        ]
+      },
+      "com_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "inertia_tensor_kg_m2": [
+        [
+          0.003881243,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.00049894,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.003879257
+        ]
+      ]
+    },
+    {
+      "prim": "/ffw_sg2_follower/gripper_r_rh_p12_rn_base",
+      "mass_properties_from_pinned_urdf": true,
+      "before": {
+        "mass": 0.23600000143051147,
+        "com": [
+          0.0,
+          0.0,
+          0.03200000151991844
+        ],
+        "diagonal": [
+          9.999999974752427e-07,
+          9.999999974752427e-07,
+          9.999999974752427e-07
+        ]
+      },
+      "com_m": [
+        0.0,
+        0.0,
+        0.032
+      ],
+      "inertia_tensor_kg_m2": [
+        [
+          1e-06,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1e-06,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1e-06
+        ]
+      ]
+    },
+    {
+      "prim": "/ffw_sg2_follower/gripper_r_rh_p12_rn_r1",
+      "mass_properties_from_pinned_urdf": true,
+      "before": {
+        "mass": 0.06800000369548798,
+        "com": [
+          0.0,
+          0.03400000184774399,
+          0.004000000189989805
+        ],
+        "diagonal": [
+          9.999999974752427e-07,
+          9.999999974752427e-07,
+          9.999999974752427e-07
+        ]
+      },
+      "com_m": [
+        0.0,
+        0.034,
+        0.004
+      ],
+      "inertia_tensor_kg_m2": [
+        [
+          1e-06,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1e-06,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1e-06
+        ]
+      ]
+    },
+    {
+      "prim": "/ffw_sg2_follower/gripper_r_rh_p12_rn_r2",
+      "mass_properties_from_pinned_urdf": true,
+      "before": {
+        "mass": 0.02199999988079071,
+        "com": [
+          0.0,
+          0.006000000052154064,
+          0.010999999940395355
+        ],
+        "diagonal": [
+          9.999999974752427e-07,
+          9.999999974752427e-07,
+          9.999999974752427e-07
+        ]
+      },
+      "com_m": [
+        0.0,
+        0.006,
+        0.011
+      ],
+      "inertia_tensor_kg_m2": [
+        [
+          1e-06,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1e-06,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1e-06
+        ]
+      ]
+    },
+    {
+      "prim": "/ffw_sg2_follower/gripper_r_rh_p12_rn_l1",
+      "mass_properties_from_pinned_urdf": true,
+      "before": {
+        "mass": 0.06800000369548798,
+        "com": [
+          0.0,
+          -0.03400000184774399,
+          0.004000000189989805
+        ],
+        "diagonal": [
+          9.999999974752427e-07,
+          9.999999974752427e-07,
+          9.999999974752427e-07
+        ]
+      },
+      "com_m": [
+        0.0,
+        -0.034,
+        0.004
+      ],
+      "inertia_tensor_kg_m2": [
+        [
+          1e-06,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1e-06,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1e-06
+        ]
+      ]
+    },
+    {
+      "prim": "/ffw_sg2_follower/gripper_r_rh_p12_rn_l2",
+      "mass_properties_from_pinned_urdf": true,
+      "before": {
+        "mass": 0.02199999988079071,
+        "com": [
+          0.0,
+          -0.006000000052154064,
+          0.010999999940395355
+        ],
+        "diagonal": [
+          9.999999974752427e-07,
+          9.999999974752427e-07,
+          9.999999974752427e-07
+        ]
+      },
+      "com_m": [
+        0.0,
+        -0.006,
+        0.011
+      ],
+      "inertia_tensor_kg_m2": [
+        [
+          1e-06,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1e-06,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1e-06
+        ]
+      ]
+    },
+    {
+      "prim": "/ffw_sg2_follower/head_link1",
+      "mass_properties_from_pinned_urdf": true,
+      "before": {
+        "mass": 0.12351799756288528,
+        "com": [
+          0.025339655578136444,
+          0.0,
+          0.04774514585733414
+        ],
+        "diagonal": [
+          6.8614249357779045e-06,
+          1.7715099602355622e-05,
+          1.6320676877512597e-05
+        ]
+      },
+      "com_m": [
+        0.025339656,
+        0.0,
+        0.047745146
+      ],
+      "inertia_tensor_kg_m2": [
+        [
+          6.8709657e-06,
+          8.5922602e-10,
+          -3.0026645e-07
+        ],
+        [
+          8.5922602e-10,
+          1.7715102e-05,
+          -4.4479737e-10
+        ],
+        [
+          -3.0026645e-07,
+          -4.4479737e-10,
+          1.6311135e-05
+        ]
+      ]
+    },
+    {
+      "prim": "/ffw_sg2_follower/head_link2",
+      "mass_properties_from_pinned_urdf": true,
+      "before": {
+        "mass": 0.3254213035106659,
+        "com": [
+          0.0030525634065270424,
+          0.0011804756941273808,
+          -0.015932803973555565
+        ],
+        "diagonal": [
+          0.0008902524132281542,
+          0.0007629661122336984,
+          0.0013400939060375094
+        ]
+      },
+      "com_m": [
+        0.0030525634,
+        0.0011804757,
+        -0.015932804
+      ],
+      "inertia_tensor_kg_m2": [
+        [
+          0.00089073011,
+          -5.2113308e-06,
+          1.7580542e-05
+        ],
+        [
+          -5.2113308e-06,
+          0.00076317881,
+          -1.0221563e-06
+        ],
+        [
+          1.7580542e-05,
+          -1.0221563e-06,
+          0.0013394034
+        ]
+      ]
+    },
+    {
+      "prim": "/ffw_sg2_follower/rear_wheel_steer_link",
+      "mass_properties_from_pinned_urdf": true,
+      "before": {
+        "mass": 0.7550951242446899,
+        "com": [
+          0.00980272889137268,
+          0.054712407290935516,
+          -0.13765333592891693
+        ],
+        "diagonal": [
+          0.002830210607498884,
+          0.0036242357455193996,
+          0.0016087339026853442
+        ]
+      },
+      "com_m": [
+        0.0098027286,
+        0.054712409,
+        -0.13765334
+      ],
+      "inertia_tensor_kg_m2": [
+        [
+          0.0027973229,
+          3.2908333e-05,
+          -0.00019506425
+        ],
+        [
+          3.2908333e-05,
+          0.0035822623,
+          0.00028532884
+        ],
+        [
+          -0.00019506425,
+          0.00028532884,
+          0.0016835951
+        ]
+      ]
+    },
+    {
+      "prim": "/ffw_sg2_follower/rear_wheel_drive_link",
+      "mass_properties_from_pinned_urdf": true,
+      "before": {
+        "mass": 3.7954604625701904,
+        "com": [
+          0.0,
+          0.001499601756222546,
+          0.0
+        ],
+        "diagonal": [
+          0.0071878815069794655,
+          0.011563998647034168,
+          0.007187976967543364
+        ]
+      },
+      "com_m": [
+        0.0,
+        0.0014996017,
+        0.0
+      ],
+      "inertia_tensor_kg_m2": [
+        [
+          0.0071878815,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.011563999,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.007187977
+        ]
+      ]
+    },
+    {
+      "prim": "/ffw_sg2_follower/right_wheel_steer_link",
+      "mass_properties_from_pinned_urdf": true,
+      "before": {
+        "mass": 0.7550951242446899,
+        "com": [
+          0.00980272889137268,
+          0.054712407290935516,
+          -0.13765333592891693
+        ],
+        "diagonal": [
+          0.002830210607498884,
+          0.0036242357455193996,
+          0.0016087339026853442
+        ]
+      },
+      "com_m": [
+        0.0098027286,
+        0.054712409,
+        -0.13765334
+      ],
+      "inertia_tensor_kg_m2": [
+        [
+          0.0027973229,
+          3.2908333e-05,
+          -0.00019506425
+        ],
+        [
+          3.2908333e-05,
+          0.0035822623,
+          0.00028532884
+        ],
+        [
+          -0.00019506425,
+          0.00028532884,
+          0.0016835951
+        ]
+      ]
+    },
+    {
+      "prim": "/ffw_sg2_follower/right_wheel_drive_link",
+      "mass_properties_from_pinned_urdf": true,
+      "before": {
+        "mass": 3.7954604625701904,
+        "com": [
+          0.0,
+          0.001499601756222546,
+          0.0
+        ],
+        "diagonal": [
+          0.0071878815069794655,
+          0.011563998647034168,
+          0.007187976967543364
+        ]
+      },
+      "com_m": [
+        0.0,
+        0.0014996017,
+        0.0
+      ],
+      "inertia_tensor_kg_m2": [
+        [
+          0.0071878815,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.011563999,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.007187977
+        ]
+      ]
+    },
+    {
+      "prim": "/ffw_sg2_follower/joints/gripper_l_joint1",
+      "old_limits_deg": [
+        0.0,
+        63.02535629272461
+      ],
+      "trial_limits_rad": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "prim": "/ffw_sg2_follower/joints/gripper_l_joint2",
+      "old_limits_deg": [
+        -12.605071067810059,
+        75.63042449951172
+      ],
+      "trial_limits_rad": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "prim": "/ffw_sg2_follower/joints/gripper_l_joint3",
+      "old_limits_deg": [
+        -12.605071067810059,
+        75.63042449951172
+      ],
+      "trial_limits_rad": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "prim": "/ffw_sg2_follower/joints/gripper_l_joint4",
+      "old_limits_deg": [
+        -12.605071067810059,
+        75.63042449951172
+      ],
+      "trial_limits_rad": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "prim": "/ffw_sg2_follower/joints/gripper_r_joint1",
+      "old_limits_deg": [
+        0.0,
+        63.02535629272461
+      ],
+      "trial_limits_rad": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "prim": "/ffw_sg2_follower/joints/gripper_r_joint2",
+      "old_limits_deg": [
+        -12.605071067810059,
+        75.63042449951172
+      ],
+      "trial_limits_rad": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "prim": "/ffw_sg2_follower/joints/gripper_r_joint3",
+      "old_limits_deg": [
+        -12.605071067810059,
+        75.63042449951172
+      ],
+      "trial_limits_rad": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "prim": "/ffw_sg2_follower/joints/gripper_r_joint4",
+      "old_limits_deg": [
+        -12.605071067810059,
+        75.63042449951172
+      ],
+      "trial_limits_rad": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "collision_api_moved_from_xform": "/ffw_sg2_follower/base_link/collisions/base_mobile_assy/node_STL_BINARY_",
+      "actual_mesh": "/ffw_sg2_follower/base_link/collisions/base_mobile_assy/node_STL_BINARY_/mesh",
+      "enabled": true,
+      "approximation": "convexHull"
+    },
+    {
+      "collision_api_moved_from_xform": "/ffw_sg2_follower/left_wheel_steer_link/collisions/left_wheel_steer_link/node_STL_BINARY_",
+      "actual_mesh": "/ffw_sg2_follower/left_wheel_steer_link/collisions/left_wheel_steer_link/node_STL_BINARY_/mesh",
+      "enabled": true,
+      "approximation": "convexHull"
+    },
+    {
+      "collision_api_moved_from_xform": "/ffw_sg2_follower/lift_link/collisions/lift_link/node_STL_BINARY_",
+      "actual_mesh": "/ffw_sg2_follower/lift_link/collisions/lift_link/node_STL_BINARY_/mesh",
+      "enabled": true,
+      "approximation": "convexHull"
+    },
+    {
+      "collision_api_moved_from_xform": "/ffw_sg2_follower/arm_base_link/collisions/body_arm_assy/node_STL_BINARY_",
+      "actual_mesh": "/ffw_sg2_follower/arm_base_link/collisions/body_arm_assy/node_STL_BINARY_/mesh",
+      "enabled": true,
+      "approximation": "convexHull"
+    },
+    {
+      "collision_api_moved_from_xform": "/ffw_sg2_follower/arm_l_link1/collisions/arm_l_link1/node_STL_BINARY_",
+      "actual_mesh": "/ffw_sg2_follower/arm_l_link1/collisions/arm_l_link1/node_STL_BINARY_/mesh",
+      "enabled": true,
+      "approximation": "convexHull"
+    },
+    {
+      "collision_api_moved_from_xform": "/ffw_sg2_follower/arm_l_link2/collisions/arm_l_link2/node_STL_BINARY_",
+      "actual_mesh": "/ffw_sg2_follower/arm_l_link2/collisions/arm_l_link2/node_STL_BINARY_/mesh",
+      "enabled": true,
+      "approximation": "convexHull"
+    },
+    {
+      "collision_api_moved_from_xform": "/ffw_sg2_follower/arm_l_link3/collisions/arm_l_link3/node_STL_BINARY_",
+      "actual_mesh": "/ffw_sg2_follower/arm_l_link3/collisions/arm_l_link3/node_STL_BINARY_/mesh",
+      "enabled": true,
+      "approximation": "convexHull"
+    },
+    {
+      "collision_api_moved_from_xform": "/ffw_sg2_follower/arm_l_link4/collisions/arm_l_link4/node_STL_BINARY_",
+      "actual_mesh": "/ffw_sg2_follower/arm_l_link4/collisions/arm_l_link4/node_STL_BINARY_/mesh",
+      "enabled": true,
+      "approximation": "convexHull"
+    },
+    {
+      "collision_api_moved_from_xform": "/ffw_sg2_follower/arm_l_link5/collisions/arm_l_link5/node_STL_BINARY_",
+      "actual_mesh": "/ffw_sg2_follower/arm_l_link5/collisions/arm_l_link5/node_STL_BINARY_/mesh",
+      "enabled": true,
+      "approximation": "convexHull"
+    },
+    {
+      "collision_api_moved_from_xform": "/ffw_sg2_follower/arm_l_link6/collisions/arm_l_link6/node_STL_BINARY_",
+      "actual_mesh": "/ffw_sg2_follower/arm_l_link6/collisions/arm_l_link6/node_STL_BINARY_/mesh",
+      "enabled": true,
+      "approximation": "convexHull"
+    },
+    {
+      "collision_api_moved_from_xform": "/ffw_sg2_follower/arm_l_link7/collisions/arm_l_link7/node_STL_BINARY_",
+      "actual_mesh": "/ffw_sg2_follower/arm_l_link7/collisions/arm_l_link7/node_STL_BINARY_/mesh",
+      "enabled": true,
+      "approximation": "convexHull"
+    },
+    {
+      "collision_api_moved_from_xform": "/ffw_sg2_follower/gripper_l_rh_p12_rn_base/collisions/base/node_STL_BINARY_",
+      "actual_mesh": "/ffw_sg2_follower/gripper_l_rh_p12_rn_base/collisions/base/node_STL_BINARY_/mesh",
+      "enabled": true,
+      "approximation": "convexHull"
+    },
+    {
+      "collision_api_moved_from_xform": "/ffw_sg2_follower/gripper_l_rh_p12_rn_r1/collisions/r1/node_STL_BINARY_",
+      "actual_mesh": "/ffw_sg2_follower/gripper_l_rh_p12_rn_r1/collisions/r1/node_STL_BINARY_/mesh",
+      "enabled": true,
+      "approximation": "convexHull"
+    },
+    {
+      "collision_api_moved_from_xform": "/ffw_sg2_follower/gripper_l_rh_p12_rn_r2/collisions/r2/node_STL_BINARY_",
+      "actual_mesh": "/ffw_sg2_follower/gripper_l_rh_p12_rn_r2/collisions/r2/node_STL_BINARY_/mesh",
+      "enabled": true,
+      "approximation": "convexHull"
+    },
+    {
+      "collision_api_moved_from_xform": "/ffw_sg2_follower/gripper_l_rh_p12_rn_l1/collisions/l1/node_STL_BINARY_",
+      "actual_mesh": "/ffw_sg2_follower/gripper_l_rh_p12_rn_l1/collisions/l1/node_STL_BINARY_/mesh",
+      "enabled": true,
+      "approximation": "convexHull"
+    },
+    {
+      "collision_api_moved_from_xform": "/ffw_sg2_follower/gripper_l_rh_p12_rn_l2/collisions/l2/node_STL_BINARY_",
+      "actual_mesh": "/ffw_sg2_follower/gripper_l_rh_p12_rn_l2/collisions/l2/node_STL_BINARY_/mesh",
+      "enabled": true,
+      "approximation": "convexHull"
+    },
+    {
+      "collision_api_moved_from_xform": "/ffw_sg2_follower/arm_r_link1/collisions/arm_r_link1/node_STL_BINARY_",
+      "actual_mesh": "/ffw_sg2_follower/arm_r_link1/collisions/arm_r_link1/node_STL_BINARY_/mesh",
+      "enabled": true,
+      "approximation": "convexHull"
+    },
+    {
+      "collision_api_moved_from_xform": "/ffw_sg2_follower/arm_r_link2/collisions/arm_r_link2/node_STL_BINARY_",
+      "actual_mesh": "/ffw_sg2_follower/arm_r_link2/collisions/arm_r_link2/node_STL_BINARY_/mesh",
+      "enabled": true,
+      "approximation": "convexHull"
+    },
+    {
+      "collision_api_moved_from_xform": "/ffw_sg2_follower/arm_r_link3/collisions/arm_r_link3/node_STL_BINARY_",
+      "actual_mesh": "/ffw_sg2_follower/arm_r_link3/collisions/arm_r_link3/node_STL_BINARY_/mesh",
+      "enabled": true,
+      "approximation": "convexHull"
+    },
+    {
+      "collision_api_moved_from_xform": "/ffw_sg2_follower/arm_r_link4/collisions/arm_r_link4/node_STL_BINARY_",
+      "actual_mesh": "/ffw_sg2_follower/arm_r_link4/collisions/arm_r_link4/node_STL_BINARY_/mesh",
+      "enabled": true,
+      "approximation": "convexHull"
+    },
+    {
+      "collision_api_moved_from_xform": "/ffw_sg2_follower/arm_r_link5/collisions/arm_r_link5/node_STL_BINARY_",
+      "actual_mesh": "/ffw_sg2_follower/arm_r_link5/collisions/arm_r_link5/node_STL_BINARY_/mesh",
+      "enabled": true,
+      "approximation": "convexHull"
+    },
+    {
+      "collision_api_moved_from_xform": "/ffw_sg2_follower/arm_r_link6/collisions/arm_r_link6/node_STL_BINARY_",
+      "actual_mesh": "/ffw_sg2_follower/arm_r_link6/collisions/arm_r_link6/node_STL_BINARY_/mesh",
+      "enabled": true,
+      "approximation": "convexHull"
+    },
+    {
+      "collision_api_moved_from_xform": "/ffw_sg2_follower/arm_r_link7/collisions/arm_r_link7/node_STL_BINARY_",
+      "actual_mesh": "/ffw_sg2_follower/arm_r_link7/collisions/arm_r_link7/node_STL_BINARY_/mesh",
+      "enabled": true,
+      "approximation": "convexHull"
+    },
+    {
+      "collision_api_moved_from_xform": "/ffw_sg2_follower/gripper_r_rh_p12_rn_base/collisions/base/node_STL_BINARY_",
+      "actual_mesh": "/ffw_sg2_follower/gripper_r_rh_p12_rn_base/collisions/base/node_STL_BINARY_/mesh",
+      "enabled": true,
+      "approximation": "convexHull"
+    },
+    {
+      "collision_api_moved_from_xform": "/ffw_sg2_follower/gripper_r_rh_p12_rn_r1/collisions/r1/node_STL_BINARY_",
+      "actual_mesh": "/ffw_sg2_follower/gripper_r_rh_p12_rn_r1/collisions/r1/node_STL_BINARY_/mesh",
+      "enabled": true,
+      "approximation": "convexHull"
+    },
+    {
+      "collision_api_moved_from_xform": "/ffw_sg2_follower/gripper_r_rh_p12_rn_r2/collisions/r2/node_STL_BINARY_",
+      "actual_mesh": "/ffw_sg2_follower/gripper_r_rh_p12_rn_r2/collisions/r2/node_STL_BINARY_/mesh",
+      "enabled": true,
+      "approximation": "convexHull"
+    },
+    {
+      "collision_api_moved_from_xform": "/ffw_sg2_follower/gripper_r_rh_p12_rn_l1/collisions/l1/node_STL_BINARY_",
+      "actual_mesh": "/ffw_sg2_follower/gripper_r_rh_p12_rn_l1/collisions/l1/node_STL_BINARY_/mesh",
+      "enabled": true,
+      "approximation": "convexHull"
+    },
+    {
+      "collision_api_moved_from_xform": "/ffw_sg2_follower/gripper_r_rh_p12_rn_l2/collisions/l2/node_STL_BINARY_",
+      "actual_mesh": "/ffw_sg2_follower/gripper_r_rh_p12_rn_l2/collisions/l2/node_STL_BINARY_/mesh",
+      "enabled": true,
+      "approximation": "convexHull"
+    },
+    {
+      "collision_api_moved_from_xform": "/ffw_sg2_follower/head_link1/collisions/head_link1/node_STL_BINARY_",
+      "actual_mesh": "/ffw_sg2_follower/head_link1/collisions/head_link1/node_STL_BINARY_/mesh",
+      "enabled": true,
+      "approximation": "convexHull"
+    },
+    {
+      "collision_api_moved_from_xform": "/ffw_sg2_follower/head_link2/collisions/head_link2/node_STL_BINARY_",
+      "actual_mesh": "/ffw_sg2_follower/head_link2/collisions/head_link2/node_STL_BINARY_/mesh",
+      "enabled": true,
+      "approximation": "convexHull"
+    },
+    {
+      "collision_api_moved_from_xform": "/ffw_sg2_follower/head_link2/collisions/zedm/node_STL_BINARY_",
+      "actual_mesh": "/ffw_sg2_follower/head_link2/collisions/zedm/node_STL_BINARY_/mesh",
+      "enabled": true,
+      "approximation": "convexHull"
+    },
+    {
+      "collision_api_moved_from_xform": "/ffw_sg2_follower/rear_wheel_steer_link/collisions/rear_wheel_steer_link/node_STL_BINARY_",
+      "actual_mesh": "/ffw_sg2_follower/rear_wheel_steer_link/collisions/rear_wheel_steer_link/node_STL_BINARY_/mesh",
+      "enabled": true,
+      "approximation": "convexHull"
+    },
+    {
+      "collision_api_moved_from_xform": "/ffw_sg2_follower/right_wheel_steer_link/collisions/right_wheel_steer_link/node_STL_BINARY_",
+      "actual_mesh": "/ffw_sg2_follower/right_wheel_steer_link/collisions/right_wheel_steer_link/node_STL_BINARY_/mesh",
+      "enabled": true,
+      "approximation": "convexHull"
+    },
+    {
+      "prim": "/ffw_sg2_follower/left_wheel_drive_link/collisions/mesh_0/capsule",
+      "replacement": "/ffw_sg2_follower/left_wheel_drive_link/collisions/mesh_0/trial_cylinder",
+      "radius_m": 0.08649999648332596,
+      "width_m": 0.05000000074505806
+    },
+    {
+      "prim": "/ffw_sg2_follower/rear_wheel_drive_link/collisions/mesh_0/capsule",
+      "replacement": "/ffw_sg2_follower/rear_wheel_drive_link/collisions/mesh_0/trial_cylinder",
+      "radius_m": 0.08649999648332596,
+      "width_m": 0.05000000074505806
+    },
+    {
+      "prim": "/ffw_sg2_follower/right_wheel_drive_link/collisions/mesh_0/capsule",
+      "replacement": "/ffw_sg2_follower/right_wheel_drive_link/collisions/mesh_0/trial_cylinder",
+      "radius_m": 0.08649999648332596,
+      "width_m": 0.05000000074505806
+    }
+  ],
+  "note": "Isolated reuse of prior 5.1 v4; no 6.0 regeneration or official edits. Motor gains are experimental."
+}

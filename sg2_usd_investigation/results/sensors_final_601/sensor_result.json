@@ -1,0 +1,322 @@
+{
+  "status": "error",
+  "candidate_usd": "/home/robotis/workspaces/hx5_isaac/cyclo_lab/sg2_usd_investigation/runtime/FFW_SG2_trial.usd",
+  "candidate_sha256_before": "82aa16b83a431fbdf24f068c0982e47af06ce09c50953cf91a7be21bb995c4d8",
+  "requested_isaac_version": "6.0.1-rc.7 (installed runtime)",
+  "calibration_status": "trial sensor models; ROBOTIS hardware parameters unknown",
+  "validation_scope": "head stereo RGB/ideal depth + both real OmniLidar mounts; static rendering fixture",
+  "installed_version": "6.0.1-rc.7+release.42383.32955d8d.gl",
+  "fixture_physics": {
+    "purpose": "static sensor-distance fixture; separate from dynamics validation",
+    "gravity_m_s2": 0.0,
+    "rigid_body_enabled": false,
+    "rigid_body_disable_gravity": true,
+    "joint_enabled": false,
+    "articulation_enabled": false,
+    "body_paths": [
+      "/World/SG2/base_link",
+      "/World/SG2/left_wheel_steer_link",
+      "/World/SG2/left_wheel_drive_link",
+      "/World/SG2/lidar_l_link",
+      "/World/SG2/lidar_r_link",
+      "/World/SG2/lift_link",
+      "/World/SG2/arm_base_link",
+      "/World/SG2/arm_l_link1",
+      "/World/SG2/arm_l_link2",
+      "/World/SG2/arm_l_link3",
+      "/World/SG2/arm_l_link4",
+      "/World/SG2/arm_l_link5",
+      "/World/SG2/arm_l_link6",
+      "/World/SG2/arm_l_link7",
+      "/World/SG2/camera_left_link",
+      "/World/SG2/gripper_l_rh_p12_rn_base",
+      "/World/SG2/gripper_l_rh_p12_rn_r1",
+      "/World/SG2/gripper_l_rh_p12_rn_r2",
+      "/World/SG2/gripper_l_rh_p12_rn_l1",
+      "/World/SG2/gripper_l_rh_p12_rn_l2",
+      "/World/SG2/arm_r_link1",
+      "/World/SG2/arm_r_link2",
+      "/World/SG2/arm_r_link3",
+      "/World/SG2/arm_r_link4",
+      "/World/SG2/arm_r_link5",
+      "/World/SG2/arm_r_link6",
+      "/World/SG2/arm_r_link7",
+      "/World/SG2/camera_right_link",
+      "/World/SG2/gripper_r_rh_p12_rn_base",
+      "/World/SG2/gripper_r_rh_p12_rn_r1",
+      "/World/SG2/gripper_r_rh_p12_rn_r2",
+      "/World/SG2/gripper_r_rh_p12_rn_l1",
+      "/World/SG2/gripper_r_rh_p12_rn_l2",
+      "/World/SG2/head_link1",
+      "/World/SG2/head_link2",
+      "/World/SG2/rear_wheel_steer_link",
+      "/World/SG2/rear_wheel_drive_link",
+      "/World/SG2/right_wheel_steer_link",
+      "/World/SG2/right_wheel_drive_link"
+    ],
+    "joint_paths": [
+      "/World/SG2/joints/left_wheel_steer",
+      "/World/SG2/joints/left_wheel_drive",
+      "/World/SG2/joints/lidar_l_joint",
+      "/World/SG2/joints/lidar_r_joint",
+      "/World/SG2/joints/lift_fixed_joint",
+      "/World/SG2/joints/lift_joint",
+      "/World/SG2/joints/arm_l_joint1",
+      "/World/SG2/joints/arm_l_joint2",
+      "/World/SG2/joints/arm_l_joint3",
+      "/World/SG2/joints/arm_l_joint4",
+      "/World/SG2/joints/arm_l_joint5",
+      "/World/SG2/joints/arm_l_joint6",
+      "/World/SG2/joints/arm_l_joint7",
+      "/World/SG2/joints/camera_left_link_joint",
+      "/World/SG2/joints/gripper_l_joint",
+      "/World/SG2/joints/gripper_l_joint1",
+      "/World/SG2/joints/gripper_l_joint2",
+      "/World/SG2/joints/gripper_l_joint3",
+      "/World/SG2/joints/gripper_l_joint4",
+      "/World/SG2/joints/arm_r_joint1",
+      "/World/SG2/joints/arm_r_joint2",
+      "/World/SG2/joints/arm_r_joint3",
+      "/World/SG2/joints/arm_r_joint4",
+      "/World/SG2/joints/arm_r_joint5",
+      "/World/SG2/joints/arm_r_joint6",
+      "/World/SG2/joints/arm_r_joint7",
+      "/World/SG2/joints/camera_right_link_joint",
+      "/World/SG2/joints/gripper_r_joint",
+      "/World/SG2/joints/gripper_r_joint1",
+      "/World/SG2/joints/gripper_r_joint2",
+      "/World/SG2/joints/gripper_r_joint3",
+      "/World/SG2/joints/gripper_r_joint4",
+      "/World/SG2/joints/head_joint1",
+      "/World/SG2/joints/head_joint2",
+      "/World/SG2/joints/rear_wheel_steer",
+      "/World/SG2/joints/rear_wheel_drive",
+      "/World/SG2/joints/right_wheel_steer",
+      "/World/SG2/joints/right_wheel_drive"
+    ],
+    "root_paths": [
+      "/World/SG2/base_link"
+    ]
+  },
+  "camera": {
+    "left": {
+      "mount_path": "/World/SG2/head_link2/zed_camera_link/zed_camera_center/zed_left_camera_frame/zed_left_camera_optical_frame",
+      "sensor_path": "/World/SG2/head_link2/zed_camera_link/zed_camera_center/zed_left_camera_frame/zed_left_camera_optical_frame/TrialRgbDepthCamera",
+      "prim_type": "Camera",
+      "resolution_hw": [
+        240,
+        320
+      ],
+      "focal_length_usd": 12.0,
+      "horizontal_aperture_usd": 20.955,
+      "vertical_aperture_usd": 15.71625,
+      "local_optical_to_usd_rotation_x_deg": 180.0,
+      "orientation_authoring_order": "local Rx180 after CameraSensor initializes/reset its Camera wrapper",
+      "world_forward": [
+        0.9999999999999984,
+        -3.973643031285335e-08,
+        -3.973642893651694e-08
+      ],
+      "mount_optical_world_forward": [
+        0.9999999999999984,
+        -3.9736430312853344e-08,
+        -3.973642881405226e-08
+      ],
+      "optical_forward_alignment_dot": 1.0,
+      "world_position_m": [
+        0.09339519962668419,
+        0.024982030503451824,
+        1.576770649291575
+      ],
+      "expected_center_image_plane_depth_m": 2.6,
+      "depth_tolerance_m": 0.1,
+      "rgb_present": true,
+      "depth_present": true,
+      "rgb_shape": [
+        240,
+        320,
+        3
+      ],
+      "rgb_nonconstant": true,
+      "rgb_path": "/home/robotis/workspaces/hx5_isaac/cyclo_lab/sg2_usd_investigation/results/sensors_final_601/camera_left_rgb.png",
+      "depth_shape": [
+        240,
+        320,
+        1
+      ],
+      "valid_depth_pixels": 27528,
+      "finite_depth_min_m": 2.5999996662139893,
+      "finite_depth_max_m": 4.950000762939453,
+      "measured_center_depth_m": 2.6000001430511475,
+      "known_target_distance_pass": true,
+      "pass": true
+    },
+    "right": {
+      "mount_path": "/World/SG2/head_link2/zed_camera_link/zed_camera_center/zed_right_camera_frame/zed_right_camera_optical_frame",
+      "sensor_path": "/World/SG2/head_link2/zed_camera_link/zed_camera_center/zed_right_camera_frame/zed_right_camera_optical_frame/TrialRgbDepthCamera",
+      "prim_type": "Camera",
+      "resolution_hw": [
+        240,
+        320
+      ],
+      "focal_length_usd": 12.0,
+      "horizontal_aperture_usd": 20.955,
+      "vertical_aperture_usd": 15.71625,
+      "local_optical_to_usd_rotation_x_deg": 180.0,
+      "orientation_authoring_order": "local Rx180 after CameraSensor initializes/reset its Camera wrapper",
+      "world_forward": [
+        0.9999999999999984,
+        -3.973643031285335e-08,
+        -3.973642893651694e-08
+      ],
+      "mount_optical_world_forward": [
+        0.9999999999999984,
+        -3.9736430312853344e-08,
+        -3.973642881405226e-08
+      ],
+      "optical_forward_alignment_dot": 1.0,
+      "world_position_m": [
+        0.09339519962668419,
+        -0.03801797050982714,
+        1.576770649291575
+      ],
+      "expected_center_image_plane_depth_m": 2.6,
+      "depth_tolerance_m": 0.1,
+      "rgb_present": true,
+      "depth_present": true,
+      "rgb_shape": [
+        240,
+        320,
+        3
+      ],
+      "rgb_nonconstant": true,
+      "rgb_path": "/home/robotis/workspaces/hx5_isaac/cyclo_lab/sg2_usd_investigation/results/sensors_final_601/camera_right_rgb.png",
+      "depth_shape": [
+        240,
+        320,
+        1
+      ],
+      "valid_depth_pixels": 27380,
+      "finite_depth_min_m": 2.5999996662139893,
+      "finite_depth_max_m": 4.950000762939453,
+      "measured_center_depth_m": 2.6000001430511475,
+      "known_target_distance_pass": true,
+      "pass": true
+    }
+  },
+  "lidar": {
+    "l": {
+      "mount_path": "/World/SG2/lidar_l_link",
+      "sensor_path": "/World/SG2/lidar_l_link/TrialGenericLidar",
+      "prim_type": "OmniLidar",
+      "world_position_m": [
+        -0.11188100278377533,
+        0.23999999463558197,
+        0.34431999921798706
+      ],
+      "profile": "GENERIC TRIAL; ideal one-channel 360-degree 10-Hz rotary",
+      "attributes": {
+        "omni:sensor:Core:scanType": "ROTARY",
+        "omni:sensor:Core:rayType": "IDEALIZED",
+        "omni:sensor:Core:scanRateBaseHz": 10,
+        "omni:sensor:Core:patternFiringRateHz": 3600,
+        "omni:sensor:Core:numberOfEmitters": 1,
+        "omni:sensor:Core:numberOfChannels": 1,
+        "omni:sensor:Core:maxReturns": 1,
+        "omni:sensor:Core:nearRangeM": 0.1,
+        "omni:sensor:Core:farRangeM": 20.0,
+        "omni:sensor:Core:rangeAccuracyM": 0.0,
+        "omni:sensor:Core:azimuthErrorStd": 0.0,
+        "omni:sensor:Core:elevationErrorStd": 0.0,
+        "omni:sensor:Core:elementsCoordsType": "CARTESIAN",
+        "omni:sensor:Core:outputFrameOfReference": "WORLD",
+        "omni:sensor:Core:emitterState:s001:azimuthDeg": [
+          0.0
+        ],
+        "omni:sensor:Core:emitterState:s001:elevationDeg": [
+          0.0
+        ],
+        "omni:sensor:Core:emitterState:s001:fireTimeNs": [
+          0
+        ],
+        "omni:sensor:Core:emitterState:s001:channelId": [
+          1
+        ]
+      },
+      "retrieval_method": "public attach_annotators result; GenericModelOutput.get_data(device='cpu')",
+      "target_path": "/World/LidarTarget_l",
+      "expected_wall_plane_local_x_m": 3.9,
+      "wall_tolerance_m": 0.1,
+      "data_present": true
+    },
+    "r": {
+      "mount_path": "/World/SG2/lidar_r_link",
+      "sensor_path": "/World/SG2/lidar_r_link/TrialGenericLidar",
+      "prim_type": "OmniLidar",
+      "world_position_m": [
+        -0.11188100278377533,
+        -0.23999999463558197,
+        0.34431999921798706
+      ],
+      "profile": "GENERIC TRIAL; ideal one-channel 360-degree 10-Hz rotary",
+      "attributes": {
+        "omni:sensor:Core:scanType": "ROTARY",
+        "omni:sensor:Core:rayType": "IDEALIZED",
+        "omni:sensor:Core:scanRateBaseHz": 10,
+        "omni:sensor:Core:patternFiringRateHz": 3600,
+        "omni:sensor:Core:numberOfEmitters": 1,
+        "omni:sensor:Core:numberOfChannels": 1,
+        "omni:sensor:Core:maxReturns": 1,
+        "omni:sensor:Core:nearRangeM": 0.1,
+        "omni:sensor:Core:farRangeM": 20.0,
+        "omni:sensor:Core:rangeAccuracyM": 0.0,
+        "omni:sensor:Core:azimuthErrorStd": 0.0,
+        "omni:sensor:Core:elevationErrorStd": 0.0,
+        "omni:sensor:Core:elementsCoordsType": "CARTESIAN",
+        "omni:sensor:Core:outputFrameOfReference": "WORLD",
+        "omni:sensor:Core:emitterState:s001:azimuthDeg": [
+          0.0
+        ],
+        "omni:sensor:Core:emitterState:s001:elevationDeg": [
+          0.0
+        ],
+        "omni:sensor:Core:emitterState:s001:fireTimeNs": [
+          0
+        ],
+        "omni:sensor:Core:emitterState:s001:channelId": [
+          1
+        ]
+      },
+      "retrieval_method": "public attach_annotators result; GenericModelOutput.get_data(device='cpu')",
+      "target_path": "/World/LidarTarget_r",
+      "expected_wall_plane_local_x_m": 3.9,
+      "wall_tolerance_m": 0.1
+    }
+  },
+  "camera_target_paths": [
+    "/World/CameraTarget",
+    "/World/CameraBackground"
+  ],
+  "scene_usda": "/home/robotis/workspaces/hx5_isaac/cyclo_lab/sg2_usd_investigation/results/sensors_final_601/runtime/sensor_scene.usda",
+  "frames_run": 60,
+  "read_errors": {},
+  "lidar_buffer_diagnostics": {
+    "l": {
+      "empty_buffer_frames": 4,
+      "nonempty_buffer_frames": 56,
+      "maximum_buffer_size": 12952,
+      "maximum_gmo_elements": 80
+    },
+    "r": {
+      "empty_buffer_frames": 4,
+      "nonempty_buffer_frames": 56,
+      "maximum_buffer_size": 12952,
+      "maximum_gmo_elements": 81
+    }
+  },
+  "pass": false,
+  "error": "ArgumentError: Python argument types in\n    Vec3d.__init__(Vec3d, numpy.float32, numpy.float32, numpy.float32)\ndid not match C++ signature:\n    __init__(_object*, double, double, double)\n    __init__(_object*, double)\n    __init__(_object*, pxrInternal_v0_25_11__pxrReserved__::GfVec3d)\n    __init__(_object*, pxrInternal_v0_25_11__pxrReserved__::GfVec3i)\n    __init__(_object*, pxrInternal_v0_25_11__pxrReserved__::GfVec3h)\n    __init__(_object*, pxrInternal_v0_25_11__pxrReserved__::GfVec3f)\n    __init__(pxrInternal_v0_25_11__pxrReserved__::pxr_boost::python::api::object)",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/robotis/workspaces/hx5_isaac/cyclo_lab/sg2_usd_investigation/scripts/sensor_probe_601.py\", line 440, in main\n    exit_code = run_probe(app, args, result)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/robotis/workspaces/hx5_isaac/cyclo_lab/sg2_usd_investigation/scripts/sensor_probe_601.py\", line 381, in run_probe\n    [list(inverse.Transform(Gf.Vec3d(*point))) for point in finite], dtype=float\n                            ^^^^^^^^^^^^^^^^\nBoost.Python.ArgumentError: Python argument types in\n    Vec3d.__init__(Vec3d, numpy.float32, numpy.float32, numpy.float32)\ndid not match C++ signature:\n    __init__(_object*, double, double, double)\n    __init__(_object*, double)\n    __init__(_object*, pxrInternal_v0_25_11__pxrReserved__::GfVec3d)\n    __init__(_object*, pxrInternal_v0_25_11__pxrReserved__::GfVec3i)\n    __init__(_object*, pxrInternal_v0_25_11__pxrReserved__::GfVec3h)\n    __init__(_object*, pxrInternal_v0_25_11__pxrReserved__::GfVec3f)\n    __init__(pxrInternal_v0_25_11__pxrReserved__::pxr_boost::python::api::object)\n",
+  "candidate_sha256_after": "82aa16b83a431fbdf24f068c0982e47af06ce09c50953cf91a7be21bb995c4d8",
+  "candidate_unchanged": true
+}

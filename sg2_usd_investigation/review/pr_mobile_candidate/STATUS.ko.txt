@@ -1,0 +1,9 @@
+모바일 PR 코드 초안 (미적용, 실행 미검증)
+
+이 3개 파일은 /tmp에 작성했던 초안을 집에서 이어서 검토하도록 보관한 것입니다.
+공식 source/ 또는 별도 PR 작업 폴더에는 적용하지 않았습니다.
+Python 구문 확인만 했으며, 이 예제의 시뮬레이션 통과 결과는 없습니다.
+이미 독립 물리/센서 검사에서 검증한 runtime/ 코드와 구분해야 합니다.
+FFW_SG2_mobile.py: 검토 대상 source/cyclo_lab/cyclo_lab/assets/robots/FFW_SG2_mobile.py
+ffw_sg2_mobile.py: 검토 대상 scripts/examples/ffw_sg2_mobile.py
+sg2_mobile.md: 검토 대상 docs/sg2_mobile.md

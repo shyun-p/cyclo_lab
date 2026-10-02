@@ -1,0 +1,48 @@
+SG2 수정 규모와 팀장 검토용 전달 범위
+
+현재 공식 파일의 실제 변경: 0개. commit/push/PR 생성: 없음.
+조사 스크립트, 테스트 실행기, GUI는 검증을 위한 부가 코드이며 공식 적용 패치의 크기와 다릅니다.
+
+1차 검토용 Python 제안
+  FFW_SG2_mobile.proposal.py: 기존 FFW_SG2_CFG를 복사하는 별도 모바일 설정.
+  대상 경로: source/cyclo_lab/cyclo_lab/assets/robots/FFW_SG2_mobile.py (새 파일).
+  변경 내용: 새 USD 경로, 중력 ON, 초기 바퀴 관절, 조향/구동 액추에이터 두 그룹, mimic 종속 PD=0.
+  기존 FFW_SG2.py 및 기존 pick_place의 기본 설정은 바꾸지 않는 제안입니다.
+  FFW_SG2_mobile.proposal.patch는 아직 적용하지 않은 새 파일 추가 패치입니다.
+  Python 구문만 확인했으며, 이 새 설정으로 전체 Isaac Lab task를 실행한 결과는 없습니다.
+  USD 파일과 제어기가 없으면 Python 설정만 추가해도 주행하지 않습니다.
+
+별도로 필요한 로봇 자산 변경
+  최종 로봇: ../runtime/FFW_SG2_trial.usd
+  센서 layer: ../runtime/FFW_SG2_with_sensors.usda
+  내용: floating base, 바퀴 접촉, 39개 링크 질량/CoM/관성, Mesh 충돌 API, 그리퍼 제한, 센서 추가.
+  USD는 바이너리 자산이므로 Python 줄 수로 변경 규모를 평가할 수 없습니다.
+  위 패치를 실제 repo용으로 설치할 때 기대 경로:
+    data/robots/FFW/FFW_SG2_mobile.usd
+    data/robots/FFW/FFW_SG2_mobile_with_sensors.usda
+  이 파일들은 공식 data/에 아직 복사하지 않았습니다.
+  배포할 센서 layer의 상대 참조도 FFW_SG2_mobile.usd로 맞춰야 합니다.
+  원본 USD를 덮어쓰지 않는 새 자산 추가 제안입니다.
+
+별도 검토가 필요한 전체 task 적용
+  기존 pick_place에 바퀴 액션을 넣으면 19차원이 25차원이 됩니다.
+  eef/camera 경로, reset, 관측, 정책/데이터셋/Mimic 호환 검토와 실제 실행 검증이 필요합니다.
+  이것은 1차 작은 Python 설정 패치에 포함하지 않았으며 완료됐다고 보고하지 않습니다.
+
+확인된 것
+  추가: runtime cfg/actions의 실제 import/factory/원본 보존/관절 선택을 Sim5.1 + Isaac Lab2.3에서 통과. 전체 task는 미실행.
+  로컬 Isaac Sim 6.0.1-rc.7 독립 물리 검사11개, RGB/depth/LiDAR 출력 검사, GUI 주행/그리퍼/센서 동시 동작.
+  원문 아래 주석 비교: FFW_SG2.review.py, pick_place_env_cfg.review.py, joint_pos_env_cfg.review.py.
+
+확인되지 않은 것
+  전체 Isaac Lab task, 실물 모터 값, 실측 질량/관성, 센서 보정, 그리퍼 실물 개방 폭/힘.
+  센서 위치는 공식 URDF 기준. 센서 동작 값은 시험용이며 LiDAR의 공식 270도/720샘플 설정 적용은 남아 있음.
+
+팀장 보고 문안
+  공식 모델의 모바일 사용을 막는 설정과 자산 문제를 확인했습니다.
+  원본을 보존한 수정 후보를 만들고 Isaac Sim 6.0.1-rc.7의 독립 장면에서 주행·그리퍼·센서를 검증했습니다.
+  별도 모바일 설정 추가 패치부터 검토를 요청하며, 전체 task 통합과 실물 사양 일치는 후속 검증 대상입니다.
+
+대외 표현
+  'ROBOTIS 코드 전체가 잘못됐다'가 아니라 '고정 pick_place 설정과 모바일 SG2 사용 요구 사이의 차이'로 설명합니다.
+  '4가지 문제 완전 해결' 대신 각 항목의 확인 결과와 남은 검증을 함께 전달합니다.

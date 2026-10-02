@@ -1,0 +1,891 @@
+{
+  "case": "original_motor",
+  "usd": "/home/robotis/workspaces/hx5_isaac/cyclo_lab/source/cyclo_lab/data/robots/FFW/FFW_SG2.usd",
+  "usd_sha256": "a058ecf3266714440bef9ff26d7fe46a1ef60f768f0d5dee754b252b05688689",
+  "version": "6.0.1-rc.7+release.42383.32955d8d.gl",
+  "dt_s": 0.005,
+  "physics_device": "cpu",
+  "scope": "Standalone PhysX USD and equivalent gains, not Isaac Lab runtime",
+  "wheel_control": "direct",
+  "self_collision": "on",
+  "slave_mode": "passive",
+  "motor_parameters": "Test-only steer kp10000 kd100 effort1000; drive kp0 kd100 effort100 Nm",
+  "articulation_root": "/World/Robot/ffw_sg2_follower",
+  "joint_names": [
+    "left_wheel_steer",
+    "lift_joint",
+    "rear_wheel_steer",
+    "right_wheel_steer",
+    "left_wheel_drive",
+    "arm_l_joint1",
+    "arm_r_joint1",
+    "head_joint1",
+    "rear_wheel_drive",
+    "right_wheel_drive",
+    "arm_l_joint2",
+    "arm_r_joint2",
+    "head_joint2",
+    "arm_l_joint3",
+    "arm_r_joint3",
+    "arm_l_joint4",
+    "arm_r_joint4",
+    "arm_l_joint5",
+    "arm_r_joint5",
+    "arm_l_joint6",
+    "arm_r_joint6",
+    "arm_l_joint7",
+    "arm_r_joint7",
+    "gripper_l_joint1",
+    "gripper_l_joint3",
+    "gripper_r_joint1",
+    "gripper_r_joint3",
+    "gripper_l_joint2",
+    "gripper_l_joint4",
+    "gripper_r_joint2",
+    "gripper_r_joint4"
+  ],
+  "body_names": [
+    "world",
+    "left_wheel_steer_link",
+    "arm_base_link",
+    "rear_wheel_steer_link",
+    "right_wheel_steer_link",
+    "left_wheel_drive_link",
+    "arm_l_link1",
+    "arm_r_link1",
+    "head_link1",
+    "rear_wheel_drive_link",
+    "right_wheel_drive_link",
+    "arm_l_link2",
+    "arm_r_link2",
+    "head_link2",
+    "arm_l_link3",
+    "arm_r_link3",
+    "arm_l_link4",
+    "arm_r_link4",
+    "arm_l_link5",
+    "arm_r_link5",
+    "arm_l_link6",
+    "arm_r_link6",
+    "arm_l_link7",
+    "arm_r_link7",
+    "gripper_l_rh_p12_rn_r1",
+    "gripper_l_rh_p12_rn_l1",
+    "gripper_r_rh_p12_rn_r1",
+    "gripper_r_rh_p12_rn_l1",
+    "gripper_l_rh_p12_rn_r2",
+    "gripper_l_rh_p12_rn_l2",
+    "gripper_r_rh_p12_rn_r2",
+    "gripper_r_rh_p12_rn_l2"
+  ],
+  "mass_kg": 94.2238540649414,
+  "initial_stage_units_m": 1.0,
+  "initial": {
+    "root_position_m": [
+      -4.470348358154297e-08,
+      -9.313225746154785e-10,
+      -1.1920928955078125e-07
+    ],
+    "root_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "yaw_rad": 0.0,
+    "tilt_deg": 0.0,
+    "com_m": [
+      -0.04620596766471863,
+      0.003235130337998271,
+      0.5955784916877747
+    ],
+    "com_support_margin_m": 0.12231498211622238,
+    "wheel_centers_m": [
+      [
+        0.1370999962091446,
+        0.25540006160736084,
+        0.08649992942810059
+      ],
+      [
+        0.13710007071495056,
+        -0.2554001212120056,
+        0.08649985492229462
+      ],
+      [
+        -0.28990015387535095,
+        6.402842700481415e-09,
+        0.08649979531764984
+      ]
+    ],
+    "wheel_steer_rad": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "wheel_drive_rad_s": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "gripper_rad": {
+      "l": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "r": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "settle": {
+    "root_position_m": [
+      -4.470348358154297e-08,
+      -9.313225746154785e-10,
+      -1.1920928955078125e-07
+    ],
+    "root_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "yaw_rad": 0.0,
+    "tilt_deg": 0.0,
+    "com_m": [
+      -0.04620938375592232,
+      0.0032356539741158485,
+      0.5955784916877747
+    ],
+    "com_support_margin_m": 0.12231272459030151,
+    "wheel_centers_m": [
+      [
+        0.1370999962091446,
+        0.25540006160736084,
+        0.08649992942810059
+      ],
+      [
+        0.13710007071495056,
+        -0.2554001212120056,
+        0.08649985492229462
+      ],
+      [
+        -0.2899000346660614,
+        -5.192123353481293e-08,
+        0.08649994432926178
+      ]
+    ],
+    "wheel_steer_rad": [
+      0.0,
+      0.0,
+      0.00685521773993969
+    ],
+    "wheel_drive_rad_s": [
+      0.0,
+      0.0,
+      25.329477310180664
+    ],
+    "gripper_rad": {
+      "l": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "r": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "gripper_collision_probe": {
+    "method": "PhysX raycast_all; 3-axis 3x3 bbox grid in both directions",
+    "read_only": true,
+    "root_path": "/World/Robot",
+    "query_supported": true,
+    "actual_body_pose_used": true,
+    "targets": {
+      "gripper_l_rh_p12_rn_r1": {
+        "mesh_paths": [
+          "/World/Robot/ffw_sg2_follower/left_gripper/gripper_l_rh_p12_rn_r1/collisions/r1/mesh"
+        ],
+        "body_paths": [
+          "/World/Robot/ffw_sg2_follower/left_gripper/gripper_l_rh_p12_rn_r1"
+        ],
+        "bounds_source": [
+          "actual_PhysX_body_pose"
+        ],
+        "rays_attempted": 54,
+        "rays_completed": 54,
+        "matching_collision_paths": [
+          "/World/Robot/ffw_sg2_follower/left_gripper/gripper_l_rh_p12_rn_r1/collisions/r1/mesh"
+        ],
+        "matching_rigid_body_paths": [],
+        "other_collision_hit_count": 46,
+        "query_errors": [],
+        "bbox_world": [
+          [
+            -0.032900036571245246,
+            0.1554155784526836,
+            0.6316154283149553
+          ],
+          [
+            -0.006900021055993926,
+            0.22349504714507684,
+            0.6930578540887462
+          ]
+        ],
+        "status": "confirmed_collision_path_hit"
+      },
+      "gripper_l_rh_p12_rn_r2": {
+        "mesh_paths": [
+          "/World/Robot/ffw_sg2_follower/left_gripper/gripper_l_rh_p12_rn_r2/collisions/r2/mesh"
+        ],
+        "body_paths": [
+          "/World/Robot/ffw_sg2_follower/left_gripper/gripper_l_rh_p12_rn_r2"
+        ],
+        "bounds_source": [
+          "actual_PhysX_body_pose"
+        ],
+        "rays_attempted": 54,
+        "rays_completed": 54,
+        "matching_collision_paths": [
+          "/World/Robot/ffw_sg2_follower/left_gripper/gripper_l_rh_p12_rn_r2/collisions/r2/mesh"
+        ],
+        "matching_rigid_body_paths": [],
+        "other_collision_hit_count": 28,
+        "query_errors": [],
+        "bbox_world": [
+          [
+            -0.0329000234750858,
+            0.15213670187014153,
+            0.595600384507346
+          ],
+          [
+            -0.0069000159906888285,
+            0.1740367089581859,
+            0.6503747202051834
+          ]
+        ],
+        "status": "confirmed_collision_path_hit"
+      },
+      "gripper_l_rh_p12_rn_l1": {
+        "mesh_paths": [
+          "/World/Robot/ffw_sg2_follower/left_gripper/gripper_l_rh_p12_rn_l1/collisions/l1/mesh"
+        ],
+        "body_paths": [
+          "/World/Robot/ffw_sg2_follower/left_gripper/gripper_l_rh_p12_rn_l1"
+        ],
+        "bounds_source": [
+          "actual_PhysX_body_pose"
+        ],
+        "rays_attempted": 54,
+        "rays_completed": 54,
+        "matching_collision_paths": [
+          "/World/Robot/ffw_sg2_follower/left_gripper/gripper_l_rh_p12_rn_l1/collisions/l1/mesh"
+        ],
+        "matching_rigid_body_paths": [],
+        "other_collision_hit_count": 46,
+        "query_errors": [],
+        "bbox_world": [
+          [
+            -0.03290005129769427,
+            0.23150517459827422,
+            0.6316154317381656
+          ],
+          [
+            -0.006900039231241025,
+            0.29958464448235034,
+            0.693057856491652
+          ]
+        ],
+        "status": "confirmed_collision_path_hit"
+      },
+      "gripper_l_rh_p12_rn_l2": {
+        "mesh_paths": [
+          "/World/Robot/ffw_sg2_follower/left_gripper/gripper_l_rh_p12_rn_l2/collisions/l2/mesh"
+        ],
+        "body_paths": [
+          "/World/Robot/ffw_sg2_follower/left_gripper/gripper_l_rh_p12_rn_l2"
+        ],
+        "bounds_source": [
+          "actual_PhysX_body_pose"
+        ],
+        "rays_attempted": 54,
+        "rays_completed": 54,
+        "matching_collision_paths": [
+          "/World/Robot/ffw_sg2_follower/left_gripper/gripper_l_rh_p12_rn_l2/collisions/l2/mesh"
+        ],
+        "matching_rigid_body_paths": [],
+        "other_collision_hit_count": 28,
+        "query_errors": [],
+        "bbox_world": [
+          [
+            -0.03290005100473894,
+            0.28096349996484127,
+            0.5956003843674341
+          ],
+          [
+            -0.006900039933093544,
+            0.3028635050995769,
+            0.6503747208699382
+          ]
+        ],
+        "status": "confirmed_collision_path_hit"
+      },
+      "gripper_l_rh_p12_rn_base": {
+        "mesh_paths": [
+          "/World/Robot/ffw_sg2_follower/arm_l_link7/collisions/base/mesh"
+        ],
+        "body_paths": [
+          "/World/Robot/ffw_sg2_follower/arm_l_link7"
+        ],
+        "bounds_source": [
+          "actual_PhysX_body_pose"
+        ],
+        "rays_attempted": 54,
+        "rays_completed": 54,
+        "matching_collision_paths": [
+          "/World/Robot/ffw_sg2_follower/arm_l_link7/collisions/base/mesh"
+        ],
+        "matching_rigid_body_paths": [
+          "/World/Robot/ffw_sg2_follower/arm_l_link7"
+        ],
+        "other_collision_hit_count": 20,
+        "query_errors": [],
+        "bbox_world": [
+          [
+            -0.046900053348637574,
+            0.18750010660432642,
+            0.6531004485120288
+          ],
+          [
+            0.0070999592515491525,
+            0.2675001151249526,
+            0.7121004555106717
+          ]
+        ],
+        "status": "confirmed_collision_path_hit"
+      },
+      "gripper_r_rh_p12_rn_r1": {
+        "mesh_paths": [
+          "/World/Robot/ffw_sg2_follower/right_gripper/gripper_r_rh_p12_rn_r1/collisions/r1/mesh"
+        ],
+        "body_paths": [
+          "/World/Robot/ffw_sg2_follower/right_gripper/gripper_r_rh_p12_rn_r1"
+        ],
+        "bounds_source": [
+          "actual_PhysX_body_pose"
+        ],
+        "rays_attempted": 54,
+        "rays_completed": 54,
+        "matching_collision_paths": [
+          "/World/Robot/ffw_sg2_follower/right_gripper/gripper_r_rh_p12_rn_r1/collisions/r1/mesh"
+        ],
+        "matching_rigid_body_paths": [],
+        "other_collision_hit_count": 46,
+        "query_errors": [],
+        "bbox_world": [
+          [
+            -0.03289997824375687,
+            -0.29958464201924356,
+            0.631615307991826
+          ],
+          [
+            -0.006899959677439768,
+            -0.2315051761004182,
+            0.6930577372296793
+          ]
+        ],
+        "status": "confirmed_collision_path_hit"
+      },
+      "gripper_r_rh_p12_rn_r2": {
+        "mesh_paths": [
+          "/World/Robot/ffw_sg2_follower/right_gripper/gripper_r_rh_p12_rn_r2/collisions/r2/mesh"
+        ],
+        "body_paths": [
+          "/World/Robot/ffw_sg2_follower/right_gripper/gripper_r_rh_p12_rn_r2"
+        ],
+        "bounds_source": [
+          "actual_PhysX_body_pose"
+        ],
+        "rays_attempted": 54,
+        "rays_completed": 54,
+        "matching_collision_paths": [
+          "/World/Robot/ffw_sg2_follower/right_gripper/gripper_r_rh_p12_rn_r2/collisions/r2/mesh"
+        ],
+        "matching_rigid_body_paths": [],
+        "other_collision_hit_count": 28,
+        "query_errors": [],
+        "bbox_world": [
+          [
+            -0.03289996465531605,
+            -0.30286350341257595,
+            0.5956002634561754
+          ],
+          [
+            -0.006899949258623949,
+            -0.28096349997592013,
+            0.650374602977257
+          ]
+        ],
+        "status": "confirmed_collision_path_hit"
+      },
+      "gripper_r_rh_p12_rn_l1": {
+        "mesh_paths": [
+          "/World/Robot/ffw_sg2_follower/right_gripper/gripper_r_rh_p12_rn_l1/collisions/l1/mesh"
+        ],
+        "body_paths": [
+          "/World/Robot/ffw_sg2_follower/right_gripper/gripper_r_rh_p12_rn_l1"
+        ],
+        "bounds_source": [
+          "actual_PhysX_body_pose"
+        ],
+        "rays_attempted": 54,
+        "rays_completed": 54,
+        "matching_collision_paths": [
+          "/World/Robot/ffw_sg2_follower/right_gripper/gripper_r_rh_p12_rn_l1/collisions/l1/mesh"
+        ],
+        "matching_rigid_body_paths": [],
+        "other_collision_hit_count": 46,
+        "query_errors": [],
+        "bbox_world": [
+          [
+            -0.032899983954095414,
+            -0.22349501581843817,
+            0.6316153099621308
+          ],
+          [
+            -0.006899967055910748,
+            -0.15541554921371314,
+            0.6930577386127251
+          ]
+        ],
+        "status": "confirmed_collision_path_hit"
+      },
+      "gripper_r_rh_p12_rn_l2": {
+        "mesh_paths": [
+          "/World/Robot/ffw_sg2_follower/right_gripper/gripper_r_rh_p12_rn_l2/collisions/l2/mesh"
+        ],
+        "body_paths": [
+          "/World/Robot/ffw_sg2_follower/right_gripper/gripper_r_rh_p12_rn_l2"
+        ],
+        "bounds_source": [
+          "actual_PhysX_body_pose"
+        ],
+        "rays_attempted": 54,
+        "rays_completed": 54,
+        "matching_collision_paths": [
+          "/World/Robot/ffw_sg2_follower/right_gripper/gripper_r_rh_p12_rn_l2/collisions/l2/mesh"
+        ],
+        "matching_rigid_body_paths": [],
+        "other_collision_hit_count": 28,
+        "query_errors": [],
+        "bbox_world": [
+          [
+            -0.0328999731703465,
+            -0.17403667584410268,
+            0.5956002633756461
+          ],
+          [
+            -0.006899956493524928,
+            -0.15213667353171736,
+            0.6503746033598715
+          ]
+        ],
+        "status": "confirmed_collision_path_hit"
+      },
+      "gripper_r_rh_p12_rn_base": {
+        "mesh_paths": [
+          "/World/Robot/ffw_sg2_follower/arm_r_link7/collisions/base/mesh"
+        ],
+        "body_paths": [
+          "/World/Robot/ffw_sg2_follower/arm_r_link7"
+        ],
+        "bounds_source": [
+          "actual_PhysX_body_pose"
+        ],
+        "rays_attempted": 54,
+        "rays_completed": 54,
+        "matching_collision_paths": [
+          "/World/Robot/ffw_sg2_follower/arm_r_link7/collisions/base/mesh"
+        ],
+        "matching_rigid_body_paths": [
+          "/World/Robot/ffw_sg2_follower/arm_r_link7"
+        ],
+        "other_collision_hit_count": 20,
+        "query_errors": [],
+        "bbox_world": [
+          [
+            -0.04690000491986371,
+            -0.2675001002237909,
+            0.6531003293027391
+          ],
+          [
+            0.007100007680323043,
+            -0.18750009170316473,
+            0.712100336301382
+          ]
+        ],
+        "status": "confirmed_collision_path_hit"
+      }
+    },
+    "limitations": [
+      "A no-hit result is inconclusive without query and pose support; no grasp-force or object-retention validation"
+    ],
+    "usd_parser_shape_counts": {
+      "CubeShape": 2,
+      "MeshShape": 47
+    },
+    "usd_parser_mesh_paths": [
+      "/World/Robot/ffw_sg2_follower/arm_l_link7/collisions/base/mesh",
+      "/World/Robot/ffw_sg2_follower/arm_r_link7/collisions/base/mesh",
+      "/World/Robot/ffw_sg2_follower/left_gripper/gripper_l_rh_p12_rn_r1/collisions/r1/mesh",
+      "/World/Robot/ffw_sg2_follower/left_gripper/gripper_l_rh_p12_rn_r2/collisions/r2/mesh",
+      "/World/Robot/ffw_sg2_follower/left_gripper/gripper_l_rh_p12_rn_l1/collisions/l1/mesh",
+      "/World/Robot/ffw_sg2_follower/left_gripper/gripper_l_rh_p12_rn_l2/collisions/l2/mesh",
+      "/World/Robot/ffw_sg2_follower/right_gripper/gripper_r_rh_p12_rn_r1/collisions/r1/mesh",
+      "/World/Robot/ffw_sg2_follower/right_gripper/gripper_r_rh_p12_rn_r2/collisions/r2/mesh",
+      "/World/Robot/ffw_sg2_follower/right_gripper/gripper_r_rh_p12_rn_l1/collisions/l1/mesh",
+      "/World/Robot/ffw_sg2_follower/right_gripper/gripper_r_rh_p12_rn_l2/collisions/l2/mesh"
+    ],
+    "confirmed_finger_count": 8,
+    "confirmed_base_count": 2,
+    "all_eight_finger_colliders_confirmed": true,
+    "both_gripper_base_colliders_confirmed": true
+  },
+  "gripper_tests": [
+    {
+      "command_rad": 0.8,
+      "positions_rad": {
+        "l": [
+          0.799993097782135,
+          0.7999951839447021,
+          0.7999934554100037,
+          0.7999932765960693
+        ],
+        "r": [
+          0.7999932765960693,
+          0.7999951243400574,
+          0.7999932765960693,
+          0.7999932765960693
+        ]
+      },
+      "max_follow_error_rad": 2.086162567138672e-06,
+      "max_master_error_rad": 6.902217865034643e-06
+    },
+    {
+      "command_rad": 1.0,
+      "positions_rad": {
+        "l": [
+          0.999993085861206,
+          0.9999947547912598,
+          0.9999938607215881,
+          0.999993622303009
+        ],
+        "r": [
+          0.9999933242797852,
+          0.9999947547912598,
+          0.999993622303009,
+          0.9999934434890747
+        ]
+      },
+      "max_follow_error_rad": 1.6689300537109375e-06,
+      "max_master_error_rad": 6.9141387939453125e-06
+    },
+    {
+      "command_rad": 0.0,
+      "positions_rad": {
+        "l": [
+          6.608310343381163e-09,
+          1.0252145798972379e-09,
+          1.6244216638483522e-08,
+          1.4469040188203053e-08
+        ],
+        "r": [
+          7.590392314682504e-09,
+          3.379441082529411e-08,
+          2.584941505290317e-08,
+          -1.4106387770124879e-13
+        ]
+      },
+      "max_follow_error_rad": 2.6204018510611604e-08,
+      "max_master_error_rad": 7.590392314682504e-09
+    }
+  ],
+  "forward": {
+    "delta_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "expected_distance_m": 2.5949999999999998,
+    "start_state": {
+      "root_position_m": [
+        -4.470348358154297e-08,
+        -9.313225746154785e-10,
+        -1.1920928955078125e-07
+      ],
+      "root_quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "yaw_rad": 0.0,
+      "tilt_deg": 0.0,
+      "com_m": [
+        -0.04620937630534172,
+        0.0032356258016079664,
+        0.5955783724784851
+      ],
+      "com_support_margin_m": 0.1223127543926239,
+      "wheel_centers_m": [
+        [
+          0.1370999962091446,
+          0.25540006160736084,
+          0.08649992942810059
+        ],
+        [
+          0.13710007071495056,
+          -0.2554001212120056,
+          0.08649985492229462
+        ],
+        [
+          -0.2899000346660614,
+          -5.192123353481293e-08,
+          0.08649994432926178
+        ]
+      ],
+      "wheel_steer_rad": [
+        0.0,
+        0.0,
+        0.006855266634374857
+      ],
+      "wheel_drive_rad_s": [
+        0.0,
+        0.0,
+        25.32927894592285
+      ],
+      "gripper_rad": {
+        "l": [
+          6.608310343381163e-09,
+          1.0252145798972379e-09,
+          1.6244216638483522e-08,
+          1.4469040188203053e-08
+        ],
+        "r": [
+          7.590392314682504e-09,
+          3.379441082529411e-08,
+          2.584941505290317e-08,
+          -1.4106387770124879e-13
+        ]
+      }
+    },
+    "state": {
+      "root_position_m": [
+        -4.470348358154297e-08,
+        -9.313225746154785e-10,
+        -1.1920928955078125e-07
+      ],
+      "root_quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "yaw_rad": 0.0,
+      "tilt_deg": 0.0,
+      "com_m": [
+        -0.04620938375592232,
+        0.0032356553710997105,
+        0.5955784916877747
+      ],
+      "com_support_margin_m": 0.12231273949146271,
+      "wheel_centers_m": [
+        [
+          0.1370999962091446,
+          0.25540006160736084,
+          0.08649992942810059
+        ],
+        [
+          0.13710007071495056,
+          -0.2554001212120056,
+          0.08649985492229462
+        ],
+        [
+          -0.2899000346660614,
+          -3.7136487662792206e-08,
+          0.08649995177984238
+        ]
+      ],
+      "wheel_steer_rad": [
+        3.665963889672532e-17,
+        -3.8714716189054116e-17,
+        0.006855160929262638
+      ],
+      "wheel_drive_rad_s": [
+        -2.806782584130474e-15,
+        -2.806782584130474e-15,
+        25.340389251708984
+      ],
+      "gripper_rad": {
+        "l": [
+          1.3987685792624105e-12,
+          2.1096991341396087e-13,
+          3.448495178651201e-12,
+          3.072774456755467e-12
+        ],
+        "r": [
+          1.6343997552917267e-12,
+          4.4905336502205906e-13,
+          3.6813928641632465e-12,
+          3.2939757692307392e-12
+        ]
+      }
+    }
+  },
+  "lateral": {
+    "delta_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "expected_distance_m": 1.73,
+    "start_state": {
+      "root_position_m": [
+        -4.470348358154297e-08,
+        -9.313225746154785e-10,
+        -1.1920928955078125e-07
+      ],
+      "root_quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "yaw_rad": 0.0,
+      "tilt_deg": 0.0,
+      "com_m": [
+        -0.046366482973098755,
+        0.0033927769400179386,
+        0.5955784916877747
+      ],
+      "com_support_margin_m": 0.12209732085466385,
+      "wheel_centers_m": [
+        [
+          0.13709990680217743,
+          0.255400151014328,
+          0.0864998921751976
+        ],
+        [
+          0.1371000111103058,
+          -0.25540000200271606,
+          0.08649980276823044
+        ],
+        [
+          -0.2899000644683838,
+          -2.6426278054714203e-08,
+          0.08649993687868118
+        ]
+      ],
+      "wheel_steer_rad": [
+        1.570793628692627,
+        1.570793628692627,
+        0.006801970768719912
+      ],
+      "wheel_drive_rad_s": [
+        -1.5724618211942739e-15,
+        -8.021402010498224e-19,
+        25.313629150390625
+      ],
+      "gripper_rad": {
+        "l": [
+          2.8055937733890025e-15,
+          4.004427402785714e-16,
+          6.954639822880212e-15,
+          6.194391330302746e-15
+        ],
+        "r": [
+          3.3105137131373167e-15,
+          9.213731115074292e-16,
+          7.439752955948169e-15,
+          6.656090355126225e-15
+        ]
+      }
+    },
+    "state": {
+      "root_position_m": [
+        -4.470348358154297e-08,
+        -9.313225746154785e-10,
+        -1.1920928955078125e-07
+      ],
+      "root_quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "yaw_rad": 0.0,
+      "tilt_deg": 0.0,
+      "com_m": [
+        -0.046366482973098755,
+        0.003392778104171157,
+        0.5955784916877747
+      ],
+      "com_support_margin_m": 0.12209732085466385,
+      "wheel_centers_m": [
+        [
+          0.13709990680217743,
+          0.255400151014328,
+          0.0864998921751976
+        ],
+        [
+          0.1371000111103058,
+          -0.25540000200271606,
+          0.08649980276823044
+        ],
+        [
+          -0.2899000644683838,
+          -7.450580596923828e-09,
+          0.08649995177984238
+        ]
+      ],
+      "wheel_steer_rad": [
+        1.570793628692627,
+        1.570793628692627,
+        0.006802014075219631
+      ],
+      "wheel_drive_rad_s": [
+        4.252337371113413e-11,
+        1.3890495524637725e-11,
+        25.32196044921875
+      ],
+      "gripper_rad": {
+        "l": [
+          4.2669611066536426e-21,
+          -8.458661399339443e-23,
+          1.5893391744044188e-20,
+          1.3406081452523541e-20
+        ],
+        "r": [
+          8.890213298499596e-21,
+          3.54018438771064e-21,
+          1.8042736555232267e-20,
+          1.625489390553687e-20
+        ]
+      }
+    }
+  },
+  "max_tilt_deg": 0.0,
+  "checks": {
+    "world_anchor_blocks_translation": true
+  },
+  "passed": true
+}

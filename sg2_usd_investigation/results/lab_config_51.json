@@ -1,0 +1,103 @@
+{
+  "status": "passed",
+  "scope": "real config import/factory/selection check; not full task execution",
+  "packages": {
+    "torch": true,
+    "gymnasium": true,
+    "isaaclab": true
+  },
+  "isaac_sim_version": "5.1.0-rc.19+release.26219.9c81211b.gl",
+  "isaac_lab_version": "2.3.0",
+  "torch_version": "2.7.0+cu128",
+  "factory_checks": {
+    "new_cfg_object": true,
+    "new_spawn_object": true,
+    "new_actuator_objects": true,
+    "original_unchanged": true,
+    "gravity_enabled": true,
+    "slave_pd_zero": true,
+    "wheel_groups_present": true
+  },
+  "candidate_sha256": "82aa16b83a431fbdf24f068c0982e47af06ce09c50953cf91a7be21bb995c4d8",
+  "joint_names": [
+    "left_wheel_steer",
+    "left_wheel_drive",
+    "arm_l_joint1",
+    "arm_l_joint2",
+    "arm_l_joint3",
+    "arm_l_joint4",
+    "arm_l_joint5",
+    "arm_l_joint6",
+    "arm_l_joint7",
+    "gripper_l_joint1",
+    "gripper_l_joint2",
+    "gripper_l_joint3",
+    "gripper_l_joint4",
+    "arm_r_joint1",
+    "arm_r_joint2",
+    "arm_r_joint3",
+    "arm_r_joint4",
+    "arm_r_joint5",
+    "arm_r_joint6",
+    "arm_r_joint7",
+    "gripper_r_joint1",
+    "gripper_r_joint2",
+    "gripper_r_joint3",
+    "gripper_r_joint4",
+    "head_joint1",
+    "head_joint2",
+    "rear_wheel_steer",
+    "rear_wheel_drive",
+    "right_wheel_steer",
+    "right_wheel_drive"
+  ],
+  "action_modes": {
+    "record": {
+      "original_terms_copied": true,
+      "drive_joints_exist": true,
+      "steer_joints_exist": true,
+      "drive_targets": [
+        "left_wheel_drive",
+        "right_wheel_drive",
+        "rear_wheel_drive"
+      ],
+      "steer_targets": [
+        "left_wheel_steer",
+        "right_wheel_steer",
+        "rear_wheel_steer"
+      ]
+    },
+    "inference": {
+      "original_terms_copied": true,
+      "drive_joints_exist": true,
+      "steer_joints_exist": true,
+      "drive_targets": [
+        "left_wheel_drive",
+        "right_wheel_drive",
+        "rear_wheel_drive"
+      ],
+      "steer_targets": [
+        "left_wheel_steer",
+        "right_wheel_steer",
+        "rear_wheel_steer"
+      ]
+    },
+    "mimic_ik": {
+      "original_terms_copied": true,
+      "drive_joints_exist": true,
+      "steer_joints_exist": true,
+      "drive_targets": [
+        "left_wheel_drive",
+        "right_wheel_drive",
+        "rear_wheel_drive"
+      ],
+      "steer_targets": [
+        "left_wheel_steer",
+        "right_wheel_steer",
+        "rear_wheel_steer"
+      ]
+    }
+  },
+  "clamp_tensor_pass": true,
+  "pass": true
+}

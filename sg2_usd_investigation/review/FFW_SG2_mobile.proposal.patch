@@ -1,0 +1,40 @@
+--- /dev/null
++++ b/source/cyclo_lab/cyclo_lab/assets/robots/FFW_SG2_mobile.py
+@@ -0,0 +1,37 @@
++"""UNAPPLIED mobile cfg proposal; full Isaac Lab task validation is pending.
++
++Target: source/cyclo_lab/cyclo_lab/assets/robots/FFW_SG2_mobile.py
++Expected mobile USD assets must be packaged separately before using this cfg.
++This file is a review draft, not an installed official module.
++"""
++from isaaclab.actuators import ImplicitActuatorCfg
++from cyclo_lab.assets.robots import CYCLO_LAB_ASSETS_DATA_DIR
++from cyclo_lab.assets.robots.FFW_SG2 import FFW_SG2_CFG
++
++# Opt-in configuration: retain the existing FFW_SG2_CFG and pick_place defaults.
++FFW_SG2_MOBILE_CFG = FFW_SG2_CFG.copy()
++FFW_SG2_MOBILE_CFG.spawn.usd_path = (
++    f"{CYCLO_LAB_ASSETS_DATA_DIR}/robots/FFW/FFW_SG2_mobile_with_sensors.usda"
++)
++FFW_SG2_MOBILE_CFG.spawn.rigid_props.disable_gravity = False
++FFW_SG2_MOBILE_CFG.init_state.pos = (0.0, 0.0, 0.02)
++FFW_SG2_MOBILE_CFG.init_state.joint_pos.update({
++    f"{wheel}_wheel_{kind}": 0.0
++    for wheel in ("left", "right", "rear") for kind in ("steer", "drive")
++})
++# Provisional simulation limits/gains; hardware specifications are unverified.
++FFW_SG2_MOBILE_CFG.actuators["wheel_steer"] = ImplicitActuatorCfg(
++    joint_names_expr=[".*_wheel_steer"],
++    velocity_limit_sim=30.0, effort_limit_sim=1000.0,
++    stiffness=10000.0, damping=100.0,
++)
++FFW_SG2_MOBILE_CFG.actuators["wheel_drive"] = ImplicitActuatorCfg(
++    joint_names_expr=[".*_wheel_drive"],
++    velocity_limit_sim=30.0, effort_limit_sim=100.0,
++    stiffness=0.0, damping=100.0,
++)
++# Candidate USD must contain valid mimic constraints and common finger limits.
++FFW_SG2_MOBILE_CFG.actuators["gripper_slave"] = (
++    FFW_SG2_MOBILE_CFG.actuators["gripper_slave"].replace(stiffness=0.0, damping=0.0)
++)
++# No task/action/policy/dataset registration is performed by this proposal.

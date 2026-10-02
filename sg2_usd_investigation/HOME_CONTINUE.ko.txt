@@ -1,0 +1,57 @@
+집에서 SG2 조사/수정 작업 이어가기 (2026-10-02)
+
+백업 저장소: https://github.com/shyun-p/cyclo_lab
+백업 브랜치: wip/sg2-investigation-20261002
+기준 cyclo_lab 커밋: f4c0470a5e0af54a18327cf96967e8716d64dbc0
+이 브랜치는 조사 폴더를 보관하는 개인 작업 백업입니다. 공식 ROBOTIS PR 완성본이 아닙니다.
+기존 보고서의 "commit/push 없음"은 조사 당시 상태이며 이번 개인 백업 업로드 전 기록입니다.
+
+1. 집에서 백업 받기
+git clone --branch wip/sg2-investigation-20261002 --recurse-submodules https://github.com/shyun-p/cyclo_lab.git cyclo_lab_sg2_backup
+cd cyclo_lab_sg2_backup
+
+2. 먼저 볼 파일
+sg2_usd_investigation/REPORT.ko.txt: 4개 문제의 원인, 변경, 검증 근거
+sg2_usd_investigation/REMAINING_AND_QUESTIONS.ko.txt: 미완료 작업과 ROBOTIS 문의
+sg2_usd_investigation/review/CHANGE_SCOPE.ko.txt: 검토할 변경 범위
+sg2_usd_investigation/review/*.review.py: 원문 아래에 주석으로 변경 제안을 적은 비교본
+sg2_usd_investigation/runtime/FFW_SG2_trial.usd: 독립 시험에서 사용한 후보
+sg2_usd_investigation/runtime/FFW_SG2_with_sensors.usda: 머리/손목 카메라와 LiDAR layer
+sg2_usd_investigation/results/: 검사 JSON과 화면/센서 출력
+sg2_usd_investigation/review/pr_mobile_candidate/: 실행 미검증, 미적용 PR 초안
+
+3. 최신 공식 코드 기준으로 깨끗한 PR 작업 폴더 만들기
+git remote add upstream https://github.com/ROBOTIS-GIT/cyclo_lab.git
+git remote set-url --push upstream no_push
+git fetch upstream
+git worktree add -b fix/sg2-mobile-home ../cyclo_lab_sg2_pr_home upstream/main
+git -C ../cyclo_lab_sg2_pr_home submodule update --init --recursive
+
+백업 폴더는 cyclo_lab_sg2_backup/sg2_usd_investigation/에 그대로 두고,
+검토한 코드/자산만 새 PR 작업 폴더에 옮기십시오.
+이 백업 브랜치 전체를 PR 브랜치에 merge/cherry-pick하면 조사 결과물도 따라갑니다.
+새 GitHub fork를 다시 만들 필요 없이 현재 개인 fork에서 최신 upstream 기준 브랜치를 만들 수 있습니다.
+이 단계는 로컬 작업 폴더만 만들며 push 또는 PR을 자동으로 실행하지 않습니다.
+
+4. 집에서 실행할 때 주의할 실제 의존성
+현재 PC에서 검증한 버전은 Isaac Sim 6.0.1-rc.7입니다.
+6.0.1 독립 물리/센서 검사는 통과했지만 전체 Isaac Lab task reset/step은 미검증입니다.
+일부 스크립트에는 /home/robotis/isaacsim/python.sh, VERSION, 확장 라이브러리 경로가 고정돼 있습니다.
+집 PC의 설치 경로/버전에 맞게 검토 후 수정해야 합니다. clone만으로 실행 환경이 설치되지는 않습니다.
+build_trial.py/static_audit.py는 기존 PC의 sibling sg2_usd_investigation 폴더를 참조합니다.
+원본 참고 URDF를 이 백업의 reference/ffw_sg2_follower.urdf에 함께 보관했습니다.
+기존 v4 재생성 입력과 동일한 파일은 runtime/FFW_SG2_v4_source.usd에 보관돼 있습니다.
+재생성할 때 이 두 입력 경로를 명시적으로 연결하고 결과를 다시 검증해야 합니다.
+이미 보관된 runtime USD와 센서 layer는 서로 상대 경로로 연결돼 있습니다.
+
+5. 현재 남은 작업
+모터 값은 시험값이고 실물 확인이 필요합니다.
+질량/CoM/관성은 특정 공식 URDF와 일치하며 실측 보증은 아닙니다.
+센서 위치는 공식 URDF 기준이나 카메라 보정과 LiDAR 스캔 설정 확정이 남았습니다.
+그리퍼 연동은 시험했으나 최초 실물 불일치 이슈의 기대 동작 확인이 필요합니다.
+전체 task 경로, 바퀴 액션, reset/관측/정책 연결 및 실행 검증이 남았습니다.
+
+보관 범위: 기존 조사 파일 전체에서 .log, .pyc, __pycache__만 제외했습니다.
+원본 조사 폴더와 공식 source/ 파일은 수정/삭제하지 않았습니다.
+BACKUP_MANIFEST.json은 보관 파일의 SHA256과 원본 자산 해시를 기록합니다.
+GUI가 계속 생성하는 결과는 백업 시점의 내용을 복사했습니다.

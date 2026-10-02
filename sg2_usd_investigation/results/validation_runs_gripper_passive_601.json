@@ -1,0 +1,20 @@
+[
+  {
+    "name": "original_gripper_passive_601",
+    "command": [
+      "/home/robotis/isaacsim/python.sh",
+      "/home/robotis/workspaces/hx5_isaac/cyclo_lab/sg2_usd_investigation/scripts/physics_probe_601.py",
+      "--case",
+      "original_motor",
+      "--slave-mode",
+      "passive",
+      "--usd",
+      "/home/robotis/workspaces/hx5_isaac/cyclo_lab/source/cyclo_lab/data/robots/FFW/FFW_SG2.usd",
+      "--out",
+      "/home/robotis/workspaces/hx5_isaac/cyclo_lab/sg2_usd_investigation/results/physics_original_gripper_passive_601.json",
+      "--/log/file=/home/robotis/workspaces/hx5_isaac/cyclo_lab/sg2_usd_investigation/results/original_gripper_passive_601.kit.log"
+    ],
+    "returncode": 0,
+    "elapsed_s": 23.95528701100193
+  }
+]

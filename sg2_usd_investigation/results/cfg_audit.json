@@ -1,0 +1,94 @@
+{
+  "scope": "Read-only source and prior-log audit; no simulation was executed by this audit agent",
+  "official_sources_unchanged": true,
+  "findings": [
+    {
+      "id": "wheel_control_configuration",
+      "status": "verified_in_current_local_official_source",
+      "evidence": [
+        "source/cyclo_lab/cyclo_lab/assets/robots/FFW_SG2.py:27 disables gravity",
+        "source/cyclo_lab/cyclo_lab/assets/robots/FFW_SG2.py:39-42 comments out wheel initial positions",
+        "source/cyclo_lab/cyclo_lab/assets/robots/FFW_SG2.py:62-74 comments out the base actuator",
+        "source/cyclo_lab/cyclo_lab/manager_based/manipulation/pick_place/config/ffw_sg2/pick_place_env_cfg.py:87-97 defines arms, grippers, lift and head actions, with no wheel actions"
+      ],
+      "conclusion_ko": "공식 cfg는 중력이 꺼져 있고 바퀴 액추에이터가 비활성입니다. 공식 pick_place는 바퀴 행동을 정의하지 않습니다. 단독 로봇 주행은 별도 조향 위치/구동 속도 액추에이터와 명령을 추가해야 검증할 수 있습니다.",
+      "proposal": "Use isolated trial USD; enable gravity; separate steer position and wheel drive velocity actuators; keep placeholder gains labeled; add mobile task actions only in a new task version"
+    },
+    {
+      "id": "camera_absence_scope",
+      "status": "verified_in_current_local_official_source",
+      "evidence": [
+        "source/cyclo_lab/cyclo_lab/manager_based/manipulation/pick_place/config/ffw_sg2/joint_pos_env_cfg.py:181-194 spawns CameraCfg with PinholeCameraCfg",
+        "source/cyclo_lab/cyclo_lab/manager_based/manipulation/pick_place/config/ffw_sg2/pick_place_env_cfg.py:126-129 requests cam_head RGB observation"
+      ],
+      "conclusion_ko": "standalone USD에서 Camera prim이 없다는 사실과 task 카메라가 없다는 주장은 구분해야 합니다. 공식 pick_place는 head/zed 경로에 RGB 카메라를 생성합니다. 렌더링 및 실제 출력 성공 여부는 추가 실행 검증 대상입니다.",
+      "proposal": "When trial USD removes the intermediate ffw_sg2_follower hierarchy, update the commented camera and end-effector paths together; validate generated prims and actual sensor data"
+    },
+    {
+      "id": "original_gripper_mimic_not_proven_broken",
+      "status": "prior_sim_5_1_log_evidence_not_repeated_in_6_0_1_by_this_agent",
+      "evidence": [
+        "/home/robotis/workspaces/hx5_isaac/sg2_usd_investigation/logs/old_cfg.log:4 reports original USD/config gripper positions [0.8,0.8,0.8,0.8] on both hands, max follow error 0.0",
+        "/home/robotis/workspaces/hx5_isaac/sg2_usd_investigation/logs/v3_drive_result.json:1 reports regenerated asset follow error 0.3357 rad",
+        "/home/robotis/workspaces/hx5_isaac/sg2_usd_investigation/logs/v4_selfcol_on.log:8 reports regenerated v4 asset follow error 0.0009 rad",
+        "/home/robotis/workspaces/hx5_isaac/sg2_usd_investigation/scripts/dynamic_test_sg2.py:294-304 measures transient follow error on the right hand only and final positions on both hands"
+      ],
+      "conclusion_ko": "기존 로그의 0.8 rad 시험에서는 원본도 연동합니다. v4는 재생성 후 나타난 연동 오차를 줄인 근거이며, 원본의 실물 불일치를 해결했다는 근거는 아닙니다. 단일 목표/무부하 시험으로 실제 개폐 폭과 집기 동작까지 검증할 수 없습니다.",
+      "proposal": "For an isolated USD with valid mimic constraints, compare zero slave PD against the original slave PD; record both hands across opening and closing and under contact"
+    },
+    {
+      "id": "gripper_urdf_limits_and_inertia",
+      "status": "verified_in_local_urdf_copy",
+      "evidence": [
+        "/home/robotis/workspaces/hx5_isaac/sg2_usd_investigation/ai_worker/ffw_description/urdf/ffw_sg2_rev1_follower/ffw_sg2_follower.urdf:1307 j1 limit [0,1.1] rad",
+        "/home/robotis/workspaces/hx5_isaac/sg2_usd_investigation/ai_worker/ffw_description/urdf/ffw_sg2_rev1_follower/ffw_sg2_follower.urdf:1339 and 1341 j2 limit [0,1.0] rad and mimic multiplier 1",
+        "/home/robotis/workspaces/hx5_isaac/sg2_usd_investigation/ai_worker/ffw_description/urdf/ffw_sg2_rev1_follower/ffw_sg2_follower.urdf:1372 and 1374 j3 limit [0,1.1] rad and mimic multiplier 1",
+        "/home/robotis/workspaces/hx5_isaac/sg2_usd_investigation/ai_worker/ffw_description/urdf/ffw_sg2_rev1_follower/ffw_sg2_follower.urdf:1405 and 1407 j4 limit [0,1.0] rad and mimic multiplier 1",
+        "/home/robotis/workspaces/hx5_isaac/sg2_usd_investigation/ai_worker/ffw_description/urdf/ffw_sg2_rev1_follower/ffw_sg2_follower.urdf:1330,1363,1396 sets finger diagonal inertias to 0.000001"
+      ],
+      "conclusion_ko": "URDF에서는 1:1 연동 조인트의 상한이 1.1 rad와 1.0 rad로 서로 다릅니다. 0.8 rad 시험은 이 충돌을 드러내지 않습니다. 공통 [0,1.0] rad는 검토용 제한이며 실제 로봇 사양으로 확정해서는 안 됩니다.",
+      "proposal": "Clamp isolated trial joint limits and produced gripper targets to the common URDF intersection; request real limit/aperture/force/inertia data before deciding production settings"
+    },
+    {
+      "id": "lab_mimic_flag_and_sim6_importer",
+      "status": "verified_in_local_installed_source_not_runtime",
+      "evidence": [
+        "third_party/IsaacLab/VERSION is 2.3.0; HEAD 3c6e67bb5c7ada942a6d1884ab69338f57596f77",
+        "third_party/IsaacLab/source/isaaclab/isaaclab/sim/converters/urdf_converter_cfg.py:105-106 documents convert_mimic_joints_to_normal_joints",
+        "third_party/IsaacLab/source/isaaclab/isaaclab/sim/converters/urdf_converter.py:130 passes that flag unchanged to ImportConfig.set_parse_mimic",
+        "/home/robotis/isaacsim/VERSION is 6.0.1-rc.7+release.42383.32955d8d.gl",
+        "/home/robotis/isaacsim/exts/isaacsim.asset.importer.urdf/docs/CHANGELOG.md:21 says new imported mimic joints use NewtonMimicAPI exclusively",
+        "/home/robotis/isaacsim/exts/isaacsim.asset.importer.urdf/isaacsim/asset/importer/urdf/tests/test_urdf.py:499-504 expects NewtonMimicAPI and rejects PhysxMimicJointAPI"
+      ],
+      "conclusion_ko": "로컬 Lab 2.3의 플래그 이름/문서와 전달 대상이 어긋나는 근거가 있습니다. Sim 6.0.1 설치본은 rc.7이며 새 importer는 Newton mimic schema를 생성하도록 바뀌었습니다. 이전 PhysxMimicJointAPI 전용 후처리를 최신 importer 결과에 그대로 적용하면 안 됩니다.",
+      "proposal": "Log exact runtime/backend/version; inspect actual output schemas and mimic relationships before applying any converter flag or gain override; validate the known v4 copy separately from new conversion"
+    }
+  ],
+  "meaningful_validation_plan": [
+    "Hash official USD/config/task source before and after; verify AST and exact original byte preservation in annotated copies",
+    "On exact local 6.0.1-rc.7 runtime record engine/device; compare official baseline and isolated v4/trial using identical timesteps, scene and targets",
+    "Measure both hands while opening and closing at target angles 0.0,0.2,0.5,0.8,1.0 rad; record per-joint mimic residuals, limit violations, finite states, and actual finger-tip separation",
+    "Test over-range input and confirm the trial producer clamps it to 1.0 rad; distinguish clamp success from untested real aperture",
+    "Validate gripping known box widths, object retention and symmetry; use actual specification data before claiming real-robot agreement",
+    "For optional mobile task test confirm six added actions, their ordering/units, observation shape, resetting base pose/velocity and existing model/data incompatibility",
+    "For camera validate expected prim path under trial root, finite/nonconstant RGB and depth, and known target orientation/distance; camera intrinsics/extrinsics remain provisional"
+  ],
+  "created_artifacts": [
+    "sg2_usd_investigation/review/FFW_SG2.review.py",
+    "sg2_usd_investigation/review/pick_place_env_cfg.review.py",
+    "sg2_usd_investigation/review/joint_pos_env_cfg.review.py",
+    "sg2_usd_investigation/scripts/annotation_ast_check.py",
+    "sg2_usd_investigation/results/annotation_ast_check.json",
+    "sg2_usd_investigation/runtime/FFW_SG2_trial.py",
+    "sg2_usd_investigation/runtime/mobile_actions.py",
+    "sg2_usd_investigation/results/runtime_python_syntax_check.json"
+  ],
+  "additional_601_runtime_evidence": {
+    "scope": "Standalone PhysX equivalent controller, not full Isaac Lab runtime",
+    "original_source_slave_pd_follow_error_rad": 0.2255687117576599,
+    "original_self_collision_off_follow_error_rad": 0.22558195888996124,
+    "original_passive_slave_pd_follow_error_rad": 2.086162567138672e-06,
+    "interpretation": "Removing slave PD avoids interference with mimic in this harness; prior 5.1 normal-motion log is not a general 6.0 guarantee",
+    "final_report": "../REPORT.ko.txt"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "scope": "static composed USD; no simulation or full task execution",
+  "task_paths": [
+    {
+      "configured_path": "{ENV_REGEX_NS}/Robot/ffw_sg2_follower/arm_base_link",
+      "required_existing_path": "/World/envs/env_0/Robot/ffw_sg2_follower/arm_base_link",
+      "exists_in_candidate": false
+    },
+    {
+      "configured_path": "{ENV_REGEX_NS}/Robot/ffw_sg2_follower/arm_l_link7",
+      "required_existing_path": "/World/envs/env_0/Robot/ffw_sg2_follower/arm_l_link7",
+      "exists_in_candidate": false
+    },
+    {
+      "configured_path": "{ENV_REGEX_NS}/Robot/ffw_sg2_follower/arm_r_link7",
+      "required_existing_path": "/World/envs/env_0/Robot/ffw_sg2_follower/arm_r_link7",
+      "exists_in_candidate": false
+    },
+    {
+      "configured_path": "{ENV_REGEX_NS}/Robot/ffw_sg2_follower/head_link2/zed/cam_head",
+      "required_existing_path": "/World/envs/env_0/Robot/ffw_sg2_follower/head_link2/zed",
+      "exists_in_candidate": false
+    }
+  ],
+  "drop_in_task_paths_pass": false,
+  "camera_paths": [
+    "/World/envs/env_0/Robot/camera_left_link/WristDepthOpticalFrame/TrialWristRgbDepthCamera",
+    "/World/envs/env_0/Robot/camera_right_link/WristDepthOpticalFrame/TrialWristRgbDepthCamera",
+    "/World/envs/env_0/Robot/head_link2/zed_camera_link/zed_camera_center/zed_left_camera_frame/zed_left_camera_optical_frame/TrialRgbDepthCamera",
+    "/World/envs/env_0/Robot/head_link2/zed_camera_link/zed_camera_center/zed_right_camera_frame/zed_right_camera_optical_frame/TrialRgbDepthCamera"
+  ],
+  "lidar_paths": [
+    "/World/envs/env_0/Robot/lidar_l_link/TrialGenericLidar",
+    "/World/envs/env_0/Robot/lidar_r_link/TrialGenericLidar"
+  ],
+  "wheel_shapes": [
+    {
+      "path": "/World/envs/env_0/Robot/left_wheel_drive_link/collisions/mesh_0/trial_cylinder",
+      "radius_m": 0.08649999648332596,
+      "width_m": 0.05000000074505806,
+      "matches_urdf_dimensions": true
+    },
+    {
+      "path": "/World/envs/env_0/Robot/rear_wheel_drive_link/collisions/mesh_0/trial_cylinder",
+      "radius_m": 0.08649999648332596,
+      "width_m": 0.05000000074505806,
+      "matches_urdf_dimensions": true
+    },
+    {
+      "path": "/World/envs/env_0/Robot/right_wheel_drive_link/collisions/mesh_0/trial_cylinder",
+      "radius_m": 0.08649999648332596,
+      "width_m": 0.05000000074505806,
+      "matches_urdf_dimensions": true
+    }
+  ],
+  "sensor_counts_pass": true,
+  "loaded_layers": [
+    "/home/robotis/workspaces/hx5_isaac/cyclo_lab/sg2_usd_investigation/runtime/FFW_SG2_trial.usd",
+    "/home/robotis/workspaces/hx5_isaac/cyclo_lab/sg2_usd_investigation/runtime/FFW_SG2_with_sensors.usda"
+  ],
+  "layers_inside_investigation": true
+}

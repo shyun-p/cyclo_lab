@@ -1,0 +1,110 @@
+{
+  "scope": "bundled software readiness; hardware values need source data",
+  "candidate_sha256": "82aa16b83a431fbdf24f068c0982e47af06ce09c50953cf91a7be21bb995c4d8",
+  "official_hashes_unchanged": true,
+  "tracked_diff_empty": true,
+  "staged_diff_empty": true,
+  "retained_evidence": {
+    "static_39_link_match": {
+      "mass_match": 39,
+      "com_match": 39,
+      "full_tensor_match": 39,
+      "world_com_zero_q_match": 39
+    },
+    "static_matches_current_candidate": true,
+    "standalone_physics_601_pass": true,
+    "standalone_sensor_601_pass": true,
+    "camera_count": 4,
+    "lidar_count": 2,
+    "scope": "reuse prior passed checks only after confirming unchanged candidate hash"
+  },
+  "config_factory_51_pass": true,
+  "local_601_dependencies": {
+    "python": "3.12.13 (tags/v3.12.13-dirty:3bb231a, Apr 22 2026, 14:10:08) [GCC 11.4.0]",
+    "packages": {
+      "torch": false,
+      "gymnasium": false,
+      "isaaclab": false
+    }
+  },
+  "task_paths": {
+    "scope": "static composed USD; no simulation or full task execution",
+    "task_paths": [
+      {
+        "configured_path": "{ENV_REGEX_NS}/Robot/ffw_sg2_follower/arm_base_link",
+        "required_existing_path": "/World/envs/env_0/Robot/ffw_sg2_follower/arm_base_link",
+        "exists_in_candidate": false
+      },
+      {
+        "configured_path": "{ENV_REGEX_NS}/Robot/ffw_sg2_follower/arm_l_link7",
+        "required_existing_path": "/World/envs/env_0/Robot/ffw_sg2_follower/arm_l_link7",
+        "exists_in_candidate": false
+      },
+      {
+        "configured_path": "{ENV_REGEX_NS}/Robot/ffw_sg2_follower/arm_r_link7",
+        "required_existing_path": "/World/envs/env_0/Robot/ffw_sg2_follower/arm_r_link7",
+        "exists_in_candidate": false
+      },
+      {
+        "configured_path": "{ENV_REGEX_NS}/Robot/ffw_sg2_follower/head_link2/zed/cam_head",
+        "required_existing_path": "/World/envs/env_0/Robot/ffw_sg2_follower/head_link2/zed",
+        "exists_in_candidate": false
+      }
+    ],
+    "drop_in_task_paths_pass": false,
+    "camera_paths": [
+      "/World/envs/env_0/Robot/camera_left_link/WristDepthOpticalFrame/TrialWristRgbDepthCamera",
+      "/World/envs/env_0/Robot/camera_right_link/WristDepthOpticalFrame/TrialWristRgbDepthCamera",
+      "/World/envs/env_0/Robot/head_link2/zed_camera_link/zed_camera_center/zed_left_camera_frame/zed_left_camera_optical_frame/TrialRgbDepthCamera",
+      "/World/envs/env_0/Robot/head_link2/zed_camera_link/zed_camera_center/zed_right_camera_frame/zed_right_camera_optical_frame/TrialRgbDepthCamera"
+    ],
+    "lidar_paths": [
+      "/World/envs/env_0/Robot/lidar_l_link/TrialGenericLidar",
+      "/World/envs/env_0/Robot/lidar_r_link/TrialGenericLidar"
+    ],
+    "wheel_shapes": [
+      {
+        "path": "/World/envs/env_0/Robot/left_wheel_drive_link/collisions/mesh_0/trial_cylinder",
+        "radius_m": 0.08649999648332596,
+        "width_m": 0.05000000074505806,
+        "matches_urdf_dimensions": true
+      },
+      {
+        "path": "/World/envs/env_0/Robot/rear_wheel_drive_link/collisions/mesh_0/trial_cylinder",
+        "radius_m": 0.08649999648332596,
+        "width_m": 0.05000000074505806,
+        "matches_urdf_dimensions": true
+      },
+      {
+        "path": "/World/envs/env_0/Robot/right_wheel_drive_link/collisions/mesh_0/trial_cylinder",
+        "radius_m": 0.08649999648332596,
+        "width_m": 0.05000000074505806,
+        "matches_urdf_dimensions": true
+      }
+    ],
+    "sensor_counts_pass": true,
+    "loaded_layers": [
+      "/home/robotis/workspaces/hx5_isaac/cyclo_lab/sg2_usd_investigation/runtime/FFW_SG2_trial.usd",
+      "/home/robotis/workspaces/hx5_isaac/cyclo_lab/sg2_usd_investigation/runtime/FFW_SG2_with_sensors.usda"
+    ],
+    "layers_inside_investigation": true
+  },
+  "full_isaaclab_task_601_verified": false,
+  "full_isaaclab_task_51_verified": false,
+  "hardware_verified": false,
+  "merge_ready": false,
+  "software_work_remaining": [
+    "Provide a compatible Isaac Lab/PyTorch/Gymnasium environment for Isaac Sim6.0.1, or agree on supported5.1 target",
+    "Adapt all eef/camera paths to the candidate USD structure in a separate task",
+    "Implement and verify floating-base pose/velocity resets and prevent duplicate head cameras",
+    "Connect mobile commands and gripper clamp; verify19-to25 action producer/policy/dataset compatibility",
+    "Align lidar profile to the agreed specification and run full task reset/step/camera/action regression"
+  ],
+  "questions_for_robotis": [
+    "Is the PR scope a separate mobile SG2 environment or a change to existing fixed pick_place, and which Sim/Lab versions are supported?",
+    "Which SG2 hardware revision and URDF commit are approved; can you provide missing measured/CAD mass, CoM and inertia data?",
+    "What are the wheel/steer motor model, reduction ratio, continuous/peak output torque, speed limits and recommended control parameters?",
+    "What are the actual head/wrist camera and lidar models, mounting calibration, camera intrinsics and lidar scan/range/noise settings?",
+    "What exactly is the gripper mismatch (issue/reproducer), and what are the expected opening width, direction, limits, force and speed?"
+  ]
+}
